@@ -39,6 +39,7 @@ colorscheme ron
 "
 set hidden                  " Switch between unsaved buffers
 set wildmenu                " List avaliable ex commands for completing
+set directory^=/tmp//       " Put all swap files together into /tmp directory
 set backspace=eol,start,indent
                             " Allow backspacing over everything in insert mode
 
