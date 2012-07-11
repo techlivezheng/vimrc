@@ -116,6 +116,27 @@ nnoremap # :set hlsearch<CR> #
 nnoremap <Leader>HL :set hlsearch<CR>
 nnoremap <Leader>hl :set nohlsearch<CR>
 
+" Buffer movements
+nnoremap <Leader>hh :bprev<CR>
+nnoremap <Leader>ll :bnext<CR>
+
+" Window movements
+nnoremap <C-h>      <C-w>h
+nnoremap <Leader>h  <C-w>h
+nnoremap <C-l>      <C-w>l
+nnoremap <Leader>l  <C-w>l
+nnoremap <C-j>      <C-w>j
+nnoremap <Leader>j  <C-w>j
+nnoremap <C-k>      <C-w>k
+nnoremap <Leader>k  <C-w>k
+
+" Window operations
+nnoremap <Leader>wo <C-w>o
+nnoremap <Leader>ws <C-w>s
+nnoremap <Leader>wq <C-w>c
+nnoremap <Leader>ww <C-w><C-w>
+nnoremap <Leader>wv <C-w>v<C-w>l
+
 " Arrow keys are evil
 map <up>    <nop>
 map <down>  <nop>
