@@ -101,6 +101,11 @@ nmap <silent> <Leader>es :so $MYVIMRC<CR>
 " Life saver
 nnoremap ; :
 
+" Solve up/down navigation problem
+"+ for wrapped lines
+nnoremap j gj
+nnoremap k gk
+
 " Enable hlsearch
 nnoremap / :set hlsearch<CR> /
 nnoremap ? :set hlsearch<CR> ?
