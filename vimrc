@@ -97,6 +97,9 @@ set pastetoggle=<F2>
 nmap <silent> <Leader>ev :e $MYVIMRC<CR>
 nmap <silent> <Leader>es :so $MYVIMRC<CR>
 
+" Life saver
+nnoremap ; :
+
 " Enable hlsearch
 nnoremap / :set hlsearch<CR> /
 nnoremap ? :set hlsearch<CR> ?
