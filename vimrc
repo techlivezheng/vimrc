@@ -27,6 +27,11 @@ set visualbell              " Use visual bell instead of beep
 set noerrorbells            " Don't beep on error
 set cursorline              " Highlight current line
 set cursorcolumn            " Highlight current column
+
+"------ Color Scheme ----------------------------------------------------- {{{2
+"
+set background=dark
+colorscheme ron
 "
 "}}}1
 
