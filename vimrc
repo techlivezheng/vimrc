@@ -92,6 +92,10 @@ set wildignore+=*.o,*.a,*.mo,*.la,*.so,*.obj,*.pyc,*.class
 "
 " F2 = Toggle Paste Mode
 set pastetoggle=<F2>
+
+" Edit and reload .vimrc file
+nmap <silent> <Leader>ev :e $MYVIMRC<CR>
+nmap <silent> <Leader>es :so $MYVIMRC<CR>
 "
 "}}}1
 
