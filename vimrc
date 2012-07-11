@@ -12,6 +12,7 @@ set undolevels=1000         " Use as many levels of undo as possible
 "====== Visual Settings ================================================== {{{1
 "
 syntax on                   " Enable syntax highlighting
+set title                   " Change the terminal's title
 set ruler                   " Display cursor position on the bottom right
 set number                  " Show line number
 set nowrap                  " Don't wrap lines
