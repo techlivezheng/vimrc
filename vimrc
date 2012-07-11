@@ -18,6 +18,10 @@ set number                  " Show line number
 set nowrap                  " Don't wrap lines
 set nolist                  " Don't show invisiable chars
 set showmatch               " Show matching parenthesis
+set listchars=tab:▸-        " Change marks of the invisiable chars.
+set listchars+=eol:¬
+set listchars+=extends:>
+set listchars+=precedes:<
 set cpoptions+=$            " Show editing range for 'c' command
 set visualbell              " Use visual bell instead of beep
 set noerrorbells            " Don't beep on error
