@@ -61,6 +61,15 @@ set foldcolumn=1            " Show folding indicating column
                             "+ on the left side of the window
 set foldmethod=marker       " Fold according to markers
 "
+"}}}2
+
+"------ File Ignoring ---------------------------------------------------- {{{2
+"
+set wildignore+=*.swp,*.bak
+set wildignore+=CVS,.svn,.git
+set wildignore+=*.jpg,*.png,*.xpm,*.gif
+set wildignore+=*.o,*.a,*.mo,*.la,*.so,*.obj,*.pyc,*.class
+"
 "}}}1
 
 if filereadable($HOME.'/.vimrc_local')
