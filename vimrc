@@ -88,6 +88,13 @@ set wildignore+=*.o,*.a,*.mo,*.la,*.so,*.obj,*.pyc,*.class
 "
 "}}}1
 
+"====== Key Bindings Customization ======================================= {{{1
+"
+" F2 = Toggle Paste Mode
+set pastetoggle=<F2>
+"
+"}}}1
+
 if filereadable($HOME.'/.vimrc_local')
     source $HOME/.vimrc_local
 endif
