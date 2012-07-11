@@ -142,6 +142,48 @@ map <up>    <nop>
 map <down>  <nop>
 map <left>  <nop>
 map <right> <nop>
+
+" ,c = Copy
+map <Leader>c "+y
+
+" ,v = Paste
+map <Leader>v "+gP
+
+" ,U = Delete unwanted empty lines
+map <Leader>U :g/^$/d<CR>
+
+" ,T = Delete all the trailing space
+map <Leader>T :%s/\s\+$//<CR>
+
+" ,L = Toggle line numbers
+map <Leader>L :set invnumber<CR>
+
+" ,R = Convert tabs to spaces
+map <Leader>r :set expandtab<CR> :retab!<CR>
+
+" ,r = Convert spaces to tabs
+map <Leader>R :set noexpandtab<CR> :retab!<CR>
+
+" ,ct = Builds ctags
+map <Leader>ct :! /usr/bin/ctags -R *<CR>
+
+" ,cd = Switch to the directory of the open buffer
+map <Leader>cd :cd %:p:h<CR>
+
+" Opens a file with the path of the currently edited file prefixed
+" in a buffer in Normal mode
+map <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
+
+" Opens a file with the path of the currently edited file prefixed
+" in a new tab in Normal mode
+map <Leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
+" Using sudo to save a already opened privileged file
+cmap w!! w !sudo tee % >/dev/null
+
+" Use Q for formatting the current paragraph (or selection)
+vmap Q gq
+nmap Q gqap
 "
 "}}}1
 
