@@ -48,11 +48,11 @@ filetype indent on          " Indent intelligently based on the
 
 "------ Searching -------------------------------------------------------- {{{2
 "
-set hlsearch                " Highlight all search results
 set incsearch               " Search while typing
 set smartcase               " Ignore case if search pattern is all
                             "+ lowercase, case-sensitive otherwise
 set ignorecase              " Case insensitive searching
+set nohlsearch              " Don't Highlight search results
 "
 "}}}2
 
@@ -96,6 +96,12 @@ set pastetoggle=<F2>
 " Edit and reload .vimrc file
 nmap <silent> <Leader>ev :e $MYVIMRC<CR>
 nmap <silent> <Leader>es :so $MYVIMRC<CR>
+
+" Enable hlsearch
+nnoremap / :set hlsearch<CR> /
+nnoremap ? :set hlsearch<CR> ?
+nnoremap * :set hlsearch<CR> *
+nnoremap # :set hlsearch<CR> #
 "
 "}}}1
 
