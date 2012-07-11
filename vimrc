@@ -21,6 +21,8 @@ set showmatch               " Show matching parenthesis
 set cpoptions+=$            " Show editing range for 'c' command
 set visualbell              " Use visual bell instead of beep
 set noerrorbells            " Don't beep on error
+set cursorline              " Highlight current line
+set cursorcolumn            " Highlight current column
 "
 "}}}1
 
