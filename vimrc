@@ -52,6 +52,12 @@ noremap <silent> <Leader>n :NERDTreeToggle<CR>
 "
 Bundle 'msanders/snipmate.vim'
 "
+"}}}2
+
+"------ Command-T -------------------------------------------------------- {{{2
+"
+Bundle 'wincent/Command-T'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1

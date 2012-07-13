@@ -57,6 +57,14 @@ A tree explorer plugin for navigating the filesystem.
 
 Insert code snippets.
 
+### Command-T
+
+* [Home Page](https://wincent.com/products/command-t)
+* [Official Repo](http://git.wincent.com/command-t.git/)
+* [GitHub Mirror](https://github.com/wincent/Command-T)
+
+Quickly locate and open files under current path, require ruby support for vim.
+
 Installation
 ------------
 
@@ -81,3 +89,9 @@ For the rest plugins, either launch `vim` and run `:BundleInstall`, or execute
 the following command in cli.
 
     vim +BundleInstall +qall
+
+The ruby extension for Command-T must be build first.
+
+    cd ~/.vim/bundle/command-t/ruby/command-t
+    ruby extconf.rb
+    make
