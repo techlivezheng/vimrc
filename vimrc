@@ -18,6 +18,17 @@ call vundle#rc()
 " Let Vundle manage itself
 Bundle 'gmarik/vundle'
 "
+"}}}2
+
+"------ Tagbar ----------------------------------------------------------- {{{2
+"
+Bundle 'majutsushi/tagbar'
+
+let g:tagbar_sort=0
+let g:tagbar_width=36
+
+noremap <silent> <Leader>y :TagbarToggle<CR>
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1

@@ -28,6 +28,14 @@ Plugins are managed and autoloaded by [Vundle][], and placed under
 
 Vundle is short for Vimbundle and is a Vim plugin manager.
 
+### Tagbar
+
+* [Home Page](http://majutsushi.github.com/tagbar/)
+* [GitHub Repo](https://github.com/majutsushi/tagbar)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=3465)
+
+Project tags outline with nested scope.
+
 Installation
 ------------
 
