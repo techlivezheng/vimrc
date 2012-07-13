@@ -29,6 +29,12 @@ let g:tagbar_width=36
 
 noremap <silent> <Leader>y :TagbarToggle<CR>
 "
+"}}}2
+
+"------ Tagbar-PHPCtags -------------------------------------------------- {{{2
+"
+Bundle 'techlivezheng/tagbar-phpctags'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1

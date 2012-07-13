@@ -36,6 +36,13 @@ Vundle is short for Vimbundle and is a Vim plugin manager.
 
 Project tags outline with nested scope.
 
+### Tagbar-PHPCtags
+
+* [GitHub Repo](https://github.com/techlivezheng/tagbar-phpctags)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=4125)
+
+Enhanced Tagbar PHP support, written by me.
+
 Installation
 ------------
 
