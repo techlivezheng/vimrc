@@ -13,6 +13,21 @@ came from.
 * [jsuggs's vim-php-ide](https://github.com/jsuggs/vim-php-ide)
 * [tlhunter's Vim-PHP-IDE](https://github.com/tlhunter/Vim-PHP-IDE)
 
+Plugins
+-------
+
+Plugins are managed and autoloaded by [Vundle][], and placed under
+`~/.vim/bundle` directory.
+
+[Vundle]:http://www.vim.org/scripts/script.php?script_id=3458
+
+### Vundle
+
+* [Github Repo](https://github.com/gmarik/vundle)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=3458)
+
+Vundle is short for Vimbundle and is a Vim plugin manager.
+
 Installation
 ------------
 
@@ -26,3 +41,14 @@ original vim configuration. The original ~/.vimrc could be save as
 
     git clone git@github.com:techlivezheng/Vim-IDE.git ~/.vim
     ln -s .vim/vimrc .vimrc
+
+'Vundle' plugin should be installed manually first, then it will handle the
+installation of the rest plugins.
+
+    mkdir ~/.vim/bundle
+    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+For the rest plugins, either launch `vim` and run `:BundleInstall`, or execute
+the following command in cli.
+
+    vim +BundleInstall +qall

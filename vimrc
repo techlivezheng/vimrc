@@ -1,6 +1,25 @@
 " Prevent VIM from being in VI compatible mode
 set nocompatible
 
+"====== Plugin Settings ================================================== {{{1
+"
+" Required by Vundle
+filetype off
+
+" Add Vundle to runtimepath
+set rtp+=~/.vim/bundle/vundle/
+
+" Initialize Vundle
+call vundle#rc()
+
+"------ Vundle ----------------------------------------------------------- {{{2
+"
+" Required by Vundle
+" Let Vundle manage itself
+Bundle 'gmarik/vundle'
+"
+"}}}1
+
 "====== Common Settings ================================================== {{{1
 "
 set viminfo='1000,f1,:1000,/1000
