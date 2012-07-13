@@ -80,6 +80,13 @@ An elegant buffer explorer, make it much more easier working with buffers.
 
 Repeat last plugin command.
 
+### Surround
+
+* [GitHub Repo](https://github.com/tpope/vim-surround)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=1697)
+
+Change code surroundings.
+
 Installation
 ------------
 

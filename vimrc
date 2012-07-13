@@ -70,6 +70,12 @@ Bundle 'fholgado/minibufexpl.vim'
 "
 Bundle 'tpope/vim-repeat'
 "
+"}}}2
+
+"------ Surround --------------------------------------------------------- {{{2
+"
+Bundle 'tpope/vim-surround'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
