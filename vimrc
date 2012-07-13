@@ -58,6 +58,12 @@ Bundle 'msanders/snipmate.vim'
 "
 Bundle 'wincent/Command-T'
 "
+"}}}2
+
+"------ MiniBufferExplorer ----------------------------------------------- {{{2
+"
+Bundle 'fholgado/minibufexpl.vim'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1

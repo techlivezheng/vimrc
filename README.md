@@ -65,6 +65,14 @@ Insert code snippets.
 
 Quickly locate and open files under current path, require ruby support for vim.
 
+### MiniBufferExplorer
+
+* [Home Page](http://fholgado.com/minibufexpl)
+* [GitHub Repo](https://github.com/fholgado/minibufexpl.vim)
+* [Vim.org Script (Outdated)](http://www.vim.org/scripts/script.php?script_id=159)
+
+An elegant buffer explorer, make it much more easier working with buffers.
+
 Installation
 ------------
 
