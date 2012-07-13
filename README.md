@@ -50,6 +50,13 @@ Enhanced Tagbar PHP support, written by me.
 
 A tree explorer plugin for navigating the filesystem.
 
+### snipMate
+
+* [GitHub Repo](https://github.com/msanders/snipmate.vim)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=2540)
+
+Insert code snippets.
+
 Installation
 ------------
 

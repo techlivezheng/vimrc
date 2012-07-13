@@ -46,6 +46,12 @@ let NERDTreeChDirMode=2     " Setting root dir in NT also sets VIM's cd
 
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
 "
+"}}}2
+
+"------ snipMate --------------------------------------------------------- {{{2
+"
+Bundle 'msanders/snipmate.vim'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
