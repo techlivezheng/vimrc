@@ -43,6 +43,13 @@ Project tags outline with nested scope.
 
 Enhanced Tagbar PHP support, written by me.
 
+### The NERD tree
+
+* [GitHub Repo](https://github.com/scrooloose/nerdtree)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=1658)
+
+A tree explorer plugin for navigating the filesystem.
+
 Installation
 ------------
 

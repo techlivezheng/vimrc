@@ -35,6 +35,17 @@ noremap <silent> <Leader>y :TagbarToggle<CR>
 "
 Bundle 'techlivezheng/tagbar-phpctags'
 "
+"}}}2
+
+"------ NERDTree --------------------------------------------------------- {{{2
+"
+Bundle 'scrooloose/nerdtree'
+
+let NERDTreeIgnore=['CVS']
+let NERDTreeChDirMode=2     " Setting root dir in NT also sets VIM's cd
+
+noremap <silent> <Leader>n :NERDTreeToggle<CR>
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
