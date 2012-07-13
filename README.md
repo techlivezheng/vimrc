@@ -73,6 +73,13 @@ Quickly locate and open files under current path, require ruby support for vim.
 
 An elegant buffer explorer, make it much more easier working with buffers.
 
+### Repeat
+
+* [GitHub Repo](https://github.com/tpope/vim-repeat)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=2136)
+
+Repeat last plugin command.
+
 Installation
 ------------
 

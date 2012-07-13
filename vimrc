@@ -64,6 +64,12 @@ Bundle 'wincent/Command-T'
 "
 Bundle 'fholgado/minibufexpl.vim'
 "
+"}}}2
+
+"------ Repeat ----------------------------------------------------------- {{{2
+"
+Bundle 'tpope/vim-repeat'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
