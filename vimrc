@@ -193,7 +193,7 @@ nnoremap # :set hlsearch<CR> #
 nnoremap <Leader>cs :let @/ = ""<CR>
 
 " Toggle hlsearch
-nnoremap <Leader>hl :set nohlsearch<CR>
+nnoremap <esc> :noh<return><esc>
 
 " Buffer movements
 nnoremap <Leader>hh :bprev<CR>
