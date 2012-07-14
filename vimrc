@@ -102,6 +102,7 @@ set listchars+=precedes:<
 set cpoptions+=$            " Show editing range for 'c' command
 set visualbell              " Use visual bell instead of beep
 set noerrorbells            " Don't beep on error
+set colorcolumn=80          " Show right margin at 80th column.
 set cursorline              " Highlight current line
 set cursorcolumn            " Highlight current column
 
@@ -109,6 +110,10 @@ set cursorcolumn            " Highlight current column
 "
 set background=dark
 colorscheme ron
+"
+"}}}2
+
+highlight ColorColumn ctermbg=LightGray
 "
 "}}}1
 
