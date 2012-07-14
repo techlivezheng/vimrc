@@ -190,7 +190,6 @@ nnoremap * :set hlsearch<CR> *
 nnoremap # :set hlsearch<CR> #
 
 " Toggle hlsearch
-nnoremap <Leader>HL :set hlsearch<CR>
 nnoremap <Leader>hl :set nohlsearch<CR>
 
 " Buffer movements
