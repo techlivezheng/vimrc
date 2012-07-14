@@ -189,6 +189,9 @@ nnoremap ? :set hlsearch<CR> ?
 nnoremap * :set hlsearch<CR> *
 nnoremap # :set hlsearch<CR> #
 
+" Clean search
+nnoremap <Leader>cs :let @/ = ""<CR>
+
 " Toggle hlsearch
 nnoremap <Leader>hl :set nohlsearch<CR>
 
