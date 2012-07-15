@@ -114,6 +114,7 @@ colorscheme ron
 "}}}2
 
 highlight ColorColumn ctermbg=LightGray
+highlight CursorLine term=bold cterm=bold
 "
 "}}}1
 
