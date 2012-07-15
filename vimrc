@@ -100,7 +100,7 @@ set listchars+=eol:¬
 set listchars+=extends:>
 set listchars+=precedes:<
 set cpoptions+=$            " Show editing range for 'c' command
-set visualbell              " Use visual bell instead of beep
+set novisualbell            " Disable visual bell, it is annoying.
 set noerrorbells            " Don't beep on error
 set colorcolumn=80          " Show right margin at 80th column.
 set cursorline              " Highlight current line
