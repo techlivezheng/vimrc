@@ -106,10 +106,29 @@ set colorcolumn=80          " Show right margin at 80th column.
 set cursorline              " Highlight current line
 set cursorcolumn            " Highlight current column
 
+"------ Terminals -------------------------------------------------------- {{{2
+"
+" For a full-featured experience of some 256 colors color cheme in terminal
+" emulator, a proper $TERM variable must be set.
+"
+" Set TERM=xterm-256color in $HOME/.xprofile to make terminal emulator use 256
+" colors.
+"
+"}}}2
+
 "------ Color Scheme ----------------------------------------------------- {{{2
 "
-set background=dark
-colorscheme ron
+" Mustang:
+" http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484
+" A great color sheme, 256 colors.
+"
+if &t_Co >= 256 || has("gui_running")
+    set background=dark
+    colorscheme mustang
+else
+    set background=dark
+    colorscheme ron
+endif
 "
 "}}}2
 
