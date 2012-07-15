@@ -76,6 +76,12 @@ Bundle 'tpope/vim-repeat'
 "
 Bundle 'tpope/vim-surround'
 "
+"}}}2
+
+"------ Peaksea Color Scheme --------------------------------------------- {{{2
+"
+Bundle 'peaksea'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
@@ -121,10 +127,18 @@ set cursorcolumn            " Highlight current column
 " Mustang:
 " http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484
 " A great color sheme, 256 colors.
+" Peaksea:
+" http://www.vim.org/scripts/script.php?script_id=760
+" Better in diff mode, 256 colors.
 "
 if &t_Co >= 256 || has("gui_running")
-    set background=dark
-    colorscheme mustang
+    if &diff
+        set background=dark
+        colorscheme peaksea
+    else
+        set background=dark
+        colorscheme mustang
+    endif
 else
     set background=dark
     colorscheme ron
