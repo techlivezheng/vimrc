@@ -82,6 +82,12 @@ Bundle 'tpope/vim-surround'
 "
 Bundle 'peaksea'
 "
+"}}}2
+
+"------ Solarized Color Scheme ------------------------------------------- {{{2
+"
+Bundle 'altercation/vim-colors-solarized'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
@@ -130,15 +136,34 @@ set cursorcolumn            " Highlight current column
 " Peaksea:
 " http://www.vim.org/scripts/script.php?script_id=760
 " Better in diff mode, 256 colors.
+" Solarized:
+" http://ethanschoonover.com/solarized
+" A much more adaptable colorscheme, needs extra coinfigurations for
+" terminals.
+" A X terminal emulator should use 'Solarized Palette' in order to get
+" solarized colorscheme working properly.
 "
 if &t_Co >= 256 || has("gui_running")
     if &diff
         set background=dark
         colorscheme peaksea
+    elseif has("gui_running")
+        set background=dark
+        colorscheme solarized
     else
+        " If 'Solarized Palette' is not configured, we could fallback to a
+        " colorscheme designed for 256 colors instead.
         set background=dark
         colorscheme mustang
+        " If using Solarized is required, then it should be configured to run
+        " under 256 colors compatible mode.
+        "let g:solarized_termcolors=256
+        "set background=dark
+        "colorscheme solarized
     endif
+elseif &t_Co >= 16
+    set background=dark
+    colorscheme solarized
 else
     set background=dark
     colorscheme ron
