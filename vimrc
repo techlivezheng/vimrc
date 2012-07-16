@@ -166,7 +166,7 @@ elseif &t_Co >= 16
     colorscheme solarized
 else
     set background=dark
-    colorscheme ron
+    colorscheme solarized
 endif
 "
 "}}}2
