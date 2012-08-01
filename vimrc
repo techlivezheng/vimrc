@@ -120,6 +120,10 @@ set cursorcolumn            " Highlight current column
 
 "------ Terminals -------------------------------------------------------- {{{2
 "
+" For a Tmux or Screen session, the inside color support depend on the
+" outside $TERM setting. The outside color support should be equal or
+" greater than the inside.
+"
 " For a full-featured experience of some 256 colors color cheme in terminal
 " emulator, a proper $TERM variable must be set.
 "
