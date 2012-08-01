@@ -161,29 +161,25 @@ endif
 " A X terminal emulator should use 'Solarized Palette' in order to get
 " solarized colorscheme working properly.
 "
+set background=dark
+
 if &t_Co >= 256 || has("gui_running")
     if &diff
-        set background=dark
         colorscheme peaksea
     elseif has("gui_running")
-        set background=dark
         colorscheme solarized
     else
         " If 'Solarized Palette' is not configured, we could fallback to a
         " colorscheme designed for 256 colors instead.
-        set background=dark
         colorscheme mustang
         " If using Solarized is required, then it should be configured to run
         " under 256 colors compatible mode.
         "let g:solarized_termcolors=256
-        "set background=dark
         "colorscheme solarized
     endif
 elseif &t_Co >= 16
-    set background=dark
     colorscheme solarized
 else
-    set background=dark
     colorscheme solarized
 endif
 "
