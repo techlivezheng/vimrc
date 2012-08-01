@@ -123,8 +123,26 @@ set cursorcolumn            " Highlight current column
 " For a full-featured experience of some 256 colors color cheme in terminal
 " emulator, a proper $TERM variable must be set.
 "
-" Set TERM=xterm-256color in $HOME/.xprofile to make terminal emulator use 256
-" colors.
+if &term =~ "linux" " A linux console
+    set t_Co=8
+" By setting $TERM shell environmental variable to 'xterm-256color'
+" in $HOME/.xprofile or $HOME/.xinitrc, it will take effect when X
+" is loading.
+elseif &term =~ "xterm-256color" " A X terminal emulator, 256 colors
+    set t_Co=256
+elseif &term =~ "xterm-16color" " A X terminal emulator, 256 colors
+    set t_Co=16
+elseif &term =~ "xterm" " A X terminal emulator
+    set t_Co=8
+" For Tmux, the defualt terminal could be set to 'screen-256color' by
+" having `set -g default-terminal 'screen-256color'` in tmux.conf file.
+elseif &term =~ "screen-256color" " Tmux or Screen, 256 colors
+    set t_Co=256
+elseif &term =~ "screen-16color" " Tmux or Screen, 256 colors
+    set t_Co=16
+elseif &term =~ "screen" " Tmux or Screen
+    set t_Co=8
+endif
 "
 "}}}2
 
