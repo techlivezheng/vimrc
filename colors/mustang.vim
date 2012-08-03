@@ -30,6 +30,7 @@ hi LineNr         guifg=#808080 guibg=#000000 gui=none   ctermfg=244  ctermbg=23
 hi StatusLine     guifg=#d3d3d5 guibg=#444444 gui=italic ctermfg=253  ctermbg=238  cterm=italic
 hi StatusLineNC   guifg=#939395 guibg=#444444 gui=none   ctermfg=246  ctermbg=238  cterm=none
 hi VertSplit      guifg=#444444 guibg=#444444 gui=none   ctermfg=238  ctermbg=238  cterm=none
+hi FoldColumn     guifg=#808080 guibg=#000000 gui=none   ctermfg=244  ctermbg=232  cterm=none
 hi Folded         guifg=#a0a8b0 guibg=#384048 gui=none   ctermfg=248  ctermbg=4    cterm=none
 hi Title          guifg=#f6f3e8 guibg=none    gui=bold   ctermfg=254  ctermbg=none cterm=bold
 hi Visual         guifg=#faf4c6 guibg=#3c414c gui=none   ctermfg=254  ctermbg=4    cterm=none
