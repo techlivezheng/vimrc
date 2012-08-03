@@ -50,3 +50,13 @@ hi Number         guifg=#ff9800 guibg=none    gui=none   ctermfg=208  ctermbg=no
 hi Special        guifg=#ff9800 guibg=none    gui=none   ctermfg=208  ctermbg=none cterm=none
 hi PreProc        guifg=#faf4c6 guibg=none    gui=none   ctermfg=230  ctermbg=none cterm=none
 hi Todo           guifg=#000000 guibg=#e6ea50 gui=italic ctermfg=none ctermbg=none cterm=none
+
+" NERDTree colors
+hi NERDTreeUp     guifg=#5b646d ctermfg=62
+hi NERDTreeDir    guifg=#a5aebe ctermfg=111
+hi NERDTreeFile   guifg=#cdd2db ctermfg=250
+
+hi def link NERDTreeCWD String
+hi def link NERDTreePart String
+hi def link NERDTreeOpenable String
+hi def link NERDTreeCloseable NERDTreeOpenable
