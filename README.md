@@ -117,3 +117,51 @@ The ruby extension for Command-T must be build first.
     cd ~/.vim/bundle/command-t/ruby/command-t
     ruby extconf.rb
     make
+
+ColorScheme
+===========
+
+The [Solarized][] colorscheme has been used as major colorscheme. By default,
+if vim was not started in a gui, the 8-color fallback mode which Solarized
+works well without extra attention will be used, but in order to get a full
+experience of the greate Solarized colorscheme, it is recommended to set a
+proper `$TERM` environmental variable as well as the needed 'Solarized Color
+Palette' with `$SOLARIZED_PALETTE` environmental variable accordingly if in a
+terminal emulator.
+
+We use a gnome-terminal as example.
+
+First, use [gnome-terminal-colors-solarized][] to customize the terminal color
+palette for solarized colors. There are two color styles avaliable, dark and
+light, and set `$SOLARIZED_PALETTE` accordingly.
+
+    export SOLARIZED_PALETTE=dark
+
+or
+
+    export SOLARIZED_PALETTE=light
+
+Second, set a proper `$TERM` variable, both 'xterm-16color' and
+'xterm-256color' are good.
+
+    export TERM=xterm-16color
+
+or
+
+    export TERM=xterm-256color
+
+If you are in a 256 color terminal and won't or can't get Solarized Color
+Palette set, then, Solarized could be configured to run in a 256 color
+compatiable mode by having following settings in `~/.vimrc_local`.
+
+    let g:solarized_termcolors=256
+    set background=dark
+    colorscheme solarized
+
+Otherwise, without `$SOLARZIED_PALETTE` set in a 256 color terminal, a well
+designed 256 colorscheme 'mustang' will be used instead.
+
+For diff view, a better colorscheme 'peaksea' is beens used.
+
+[Solarized]: http://ethanschoonover.com/solarized
+[gnome-terminal-colors-solarized]: https://github.com/sigurdga/gnome-terminal-colors-solarized
