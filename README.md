@@ -101,6 +101,13 @@ Delete buffer without losing splited winodw.
 
 Check for syntax erros when saving a file.
 
+### QuickFixSigns
+
+* [Github Repo](https://github.com/tomtom/quickfixsigns_vim)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=2584)
+
+Mark quickfix & location list items with signs.
+
 Installation
 ------------
 

@@ -100,6 +100,12 @@ Bundle 'bufkill.vim'
 "
 Bundle 'tomtom/checksyntax_vim'
 "
+"}}}2
+
+"------ QuickFixSigns ---------------------------------------------------- {{{2
+"
+Bundle 'tomtom/quickfixsigns_vim'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
