@@ -88,6 +88,12 @@ Bundle 'peaksea'
 "
 Bundle 'altercation/vim-colors-solarized'
 "
+"}}}2
+
+"------ Bufkill ---------------------------------------------------------- {{{2
+"
+Bundle 'bufkill.vim'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1

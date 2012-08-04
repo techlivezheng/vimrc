@@ -87,6 +87,13 @@ Repeat last plugin command.
 
 Change code surroundings.
 
+### Bufkill
+
+* [Github Repo](https://github.com/vim-scripts/bufkill.vim)
+* [Vim.org.Script](http://www.vim.org/scripts/script.php?script_id=1147)
+
+Delete buffer without losing splited winodw.
+
 Installation
 ------------
 
