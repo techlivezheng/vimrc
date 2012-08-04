@@ -111,6 +111,13 @@ Bundle 'tomtom/quickfixsigns_vim'
 "------ PowerLine --- ---------------------------------------------------- {{{2
 "
 Bundle 'Lokaltog/vim-powerline'
+
+if &t_Co >= 256 || has("gui_running")
+    " In order to view fancy symbols for powerline, a patched font should
+    " be placed in ~/.fonts, misc/VeraMono-Powerline.ttf is a good choice.
+    " https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher
+    let g:Powerline_symbols = 'fancy'
+endif
 "
 "}}}1
 

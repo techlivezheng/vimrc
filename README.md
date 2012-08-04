@@ -146,6 +146,16 @@ The ruby extension for Command-T must be build first.
     ruby extconf.rb
     make
 
+In order to get full experience of Vim Powerline plugin, a patched font should
+be placed under ~/.fonts. See [fontpatcher][] page for a guide on how to patch
+a font, [Patched Fonts][] page provides a set of pre-patched fonts available
+for downloading, a pretty font has been shipped along with us in misc/ directory.
+
+[fontpatcher]: https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher
+[Patched Fonts]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
+
+    cp ~/.vim/misc/VeraMono-Powerline.ttf ~/.fonts
+
 ColorScheme
 ===========
 
