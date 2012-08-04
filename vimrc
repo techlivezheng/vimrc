@@ -230,6 +230,13 @@ endif
 
 highlight ColorColumn ctermbg=LightGray
 highlight CursorLine term=bold cterm=bold
+
+" Unify colors of the info columns on the
+"+ left side of the window
+highlight LineNr ctermbg=Black guibg=Black
+highlight FoldColumn ctermbg=Black guibg=Black
+highlight SignColumn ctermbg=Black guibg=Black
+highlight CursorLineNr ctermbg=Black guibg=Black
 "
 "}}}1
 
