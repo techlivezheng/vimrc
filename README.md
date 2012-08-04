@@ -108,6 +108,13 @@ Check for syntax erros when saving a file.
 
 Mark quickfix & location list items with signs.
 
+### Powerline
+
+* [Github Repo](https://github.com/Lokaltog/vim-powerline)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=3881)
+
+A wonderfull statusline plugin.
+
 Installation
 ------------
 

@@ -106,6 +106,12 @@ Bundle 'tomtom/checksyntax_vim'
 "
 Bundle 'tomtom/quickfixsigns_vim'
 "
+"}}}2
+
+"------ PowerLine --- ---------------------------------------------------- {{{2
+"
+Bundle 'Lokaltog/vim-powerline'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
