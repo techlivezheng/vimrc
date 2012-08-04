@@ -94,6 +94,13 @@ Change code surroundings.
 
 Delete buffer without losing splited winodw.
 
+### CheckSyntax
+
+* [Github Repo](https://github.com/tomtom/checksyntax_vim)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=1431)
+
+Check for syntax erros when saving a file.
+
 Installation
 ------------
 

@@ -94,6 +94,12 @@ Bundle 'altercation/vim-colors-solarized'
 "
 Bundle 'bufkill.vim'
 "
+"}}}2
+
+"------ CheckSyntax ------------------------------------------------------ {{{2
+"
+Bundle 'tomtom/checksyntax_vim'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
