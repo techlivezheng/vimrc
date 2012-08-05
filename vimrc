@@ -65,6 +65,10 @@ autocmd FileType nerdtree noremap <buffer> <Leader>hh     <nop>
 autocmd FileType nerdtree noremap <buffer> <Leader>ll     <nop>
 autocmd FileType nerdtree noremap <buffer> <Leader>jj     <nop>
 autocmd FileType nerdtree noremap <buffer> <Leader>kk     <nop>
+
+" Do not show quickfixsigns column in NERDTree window
+autocmd BufEnter NERD_tree_* let g:quickfixsigns#marks#buffer = []
+autocmd CursorHold NERD_tree_* let g:quickfixsigns#marks#buffer = []
 "
 "}}}2
 
@@ -93,6 +97,10 @@ autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>hh     <nop>
 autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>ll     <nop>
 autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>jj     <nop>
 autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>kk     <nop>
+
+" Do not show quickfixsigns column in MiniBufExplorer window
+autocmd BufEnter -MiniBufExplorer- let g:quickfixsigns#marks#buffer = []
+autocmd CursorHold -MiniBufExplorer- let g:quickfixsigns#marks#buffer = []
 "
 "}}}2
 
