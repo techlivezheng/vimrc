@@ -154,6 +154,12 @@ if &t_Co >= 256 || has("gui_running")
     let g:Powerline_symbols = 'fancy'
 endif
 "
+"}}}2
+
+"------ Markdown Syntax -------------------------------------------------- {{{2
+"
+Bundle 'plasticboy/vim-markdown'
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1

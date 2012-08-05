@@ -115,6 +115,13 @@ Mark quickfix & location list items with signs.
 
 A wonderfull statusline plugin.
 
+### Markdown Syntax
+
+* [Home Page](http://plasticboy.com/markdown-vim-mode/)
+* [Github Repo](https://github.com/plasticboy/vim-markdown)
+
+Syntax highlighting for markdown light-weight markup language.
+
 Installation
 ------------
 
