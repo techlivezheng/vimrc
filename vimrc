@@ -93,6 +93,11 @@ Bundle 'altercation/vim-colors-solarized'
 "------ Bufkill ---------------------------------------------------------- {{{2
 "
 Bundle 'bufkill.vim'
+
+if exists('loaded_bufkill')
+    nnoremap <Leader>jj :BB<CR>
+    nnoremap <Leader>kk :BF<CR>
+endif
 "
 "}}}2
 
