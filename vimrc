@@ -299,6 +299,15 @@ set wildignore+=*.o,*.a,*.mo,*.la,*.so,*.obj,*.pyc,*.class
 "
 "}}}1
 
+"====== Functionality Enhancement ======================================== {{{1
+"
+" Autoload files when changed on the disk
+set autoread
+autocmd BufEnter * checktime
+autocmd FileChangedShell * echo "Warning: File changed on disk"
+"
+"}}}1
+
 "====== Key Bindings Customization ======================================= {{{1
 "
 " F2 = Toggle Paste Mode
