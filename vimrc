@@ -180,7 +180,6 @@ set listchars+=precedes:<
 set cpoptions+=$            " Show editing range for 'c' command
 set novisualbell            " Disable visual bell, it is annoying.
 set noerrorbells            " Don't beep on error
-set colorcolumn=80          " Show right margin at 80th column.
 set cursorline              " Highlight current line
 set cursorcolumn            " Highlight current column
 
@@ -263,7 +262,6 @@ endif
 "
 "}}}2
 
-highlight ColorColumn ctermbg=LightGray
 highlight CursorLine term=bold cterm=bold
 
 " Unify colors of the info columns on the
