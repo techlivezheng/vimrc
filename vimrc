@@ -32,6 +32,12 @@ noremap <silent> <Leader>y :TagbarToggle<CR>
 " Do not show cursorline and cursorcolumn in tagbar window
 autocmd FileType tagbar setlocal nocursorline
 autocmd FileType tagbar setlocal nocursorcolumn
+
+" These prevent accidentally loading files while in tagbar window
+autocmd FileType tagbar noremap <buffer> <Leader>hh     <nop>
+autocmd FileType tagbar noremap <buffer> <Leader>ll     <nop>
+autocmd FileType tagbar noremap <buffer> <Leader>jj     <nop>
+autocmd FileType tagbar noremap <buffer> <Leader>kk     <nop>
 "
 "}}}2
 
@@ -53,6 +59,12 @@ noremap <silent> <Leader>n :NERDTreeToggle<CR>
 " Do not show cursorline and cursorcolumn in NERDTree window
 autocmd FileType nerdtree setlocal nocursorline
 autocmd FileType nerdtree setlocal nocursorcolumn
+
+" These prevent accidentally loading files while in NERDTree window
+autocmd FileType nerdtree noremap <buffer> <Leader>hh     <nop>
+autocmd FileType nerdtree noremap <buffer> <Leader>ll     <nop>
+autocmd FileType nerdtree noremap <buffer> <Leader>jj     <nop>
+autocmd FileType nerdtree noremap <buffer> <Leader>kk     <nop>
 "
 "}}}2
 
@@ -75,6 +87,12 @@ Bundle 'fholgado/minibufexpl.vim'
 " Do not show cursorline and cursorcolumn in MiniBufExplorer window
 autocmd BufEnter -MiniBufExplorer- setlocal nocursorline
 autocmd BufEnter -MiniBufExplorer- setlocal nocursorcolumn
+
+" These prevent accidentally loading files while in MiniBufExplorer window
+autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>hh     <nop>
+autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>ll     <nop>
+autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>jj     <nop>
+autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>kk     <nop>
 "
 "}}}2
 
