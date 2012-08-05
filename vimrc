@@ -28,6 +28,10 @@ let g:tagbar_sort=0
 let g:tagbar_width=36
 
 noremap <silent> <Leader>y :TagbarToggle<CR>
+
+" Do not show cursorline and cursorcolumn in tagbar window
+autocmd FileType tagbar setlocal nocursorline
+autocmd FileType tagbar setlocal nocursorcolumn
 "
 "}}}2
 
@@ -45,6 +49,10 @@ let NERDTreeIgnore=['CVS']
 let NERDTreeChDirMode=2     " Setting root dir in NT also sets VIM's cd
 
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
+
+" Do not show cursorline and cursorcolumn in NERDTree window
+autocmd FileType nerdtree setlocal nocursorline
+autocmd FileType nerdtree setlocal nocursorcolumn
 "
 "}}}2
 
@@ -63,6 +71,10 @@ Bundle 'wincent/Command-T'
 "------ MiniBufferExplorer ----------------------------------------------- {{{2
 "
 Bundle 'fholgado/minibufexpl.vim'
+
+" Do not show cursorline and cursorcolumn in MiniBufExplorer window
+autocmd BufEnter -MiniBufExplorer- setlocal nocursorline
+autocmd BufEnter -MiniBufExplorer- setlocal nocursorcolumn
 "
 "}}}2
 
