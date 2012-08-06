@@ -16,13 +16,13 @@ call vundle#rc()
 "
 " Required by Vundle
 " Let Vundle manage itself
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/vundle', {'dir': 'vundle'}
 "
 "}}}2
 
 "------ Tagbar ----------------------------------------------------------- {{{2
 "
-Bundle 'majutsushi/tagbar'
+Bundle 'majutsushi/tagbar', {'dir': 'plugin-tagbar'}
 
 let g:tagbar_sort=0
 let g:tagbar_width=36
@@ -43,13 +43,13 @@ autocmd FileType tagbar noremap <buffer> <Leader>kk     <nop>
 
 "------ Tagbar-PHPCtags -------------------------------------------------- {{{2
 "
-Bundle 'techlivezheng/tagbar-phpctags'
+Bundle 'techlivezheng/tagbar-phpctags', {'dir': 'plugin-tagbar-phpctags'}
 "
 "}}}2
 
 "------ NERDTree --------------------------------------------------------- {{{2
 "
-Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdtree', {'dir': 'plugin-nerdtree'}
 
 let NERDTreeIgnore=['CVS']
 let NERDTreeChDirMode=2     " Setting root dir in NT also sets VIM's cd
@@ -74,19 +74,19 @@ autocmd CursorHold NERD_tree_* let g:quickfixsigns#marks#buffer = []
 
 "------ snipMate --------------------------------------------------------- {{{2
 "
-Bundle 'msanders/snipmate.vim'
+Bundle 'msanders/snipmate.vim', {'dir': 'plugin-snipmate'}
 "
 "}}}2
 
 "------ Command-T -------------------------------------------------------- {{{2
 "
-Bundle 'wincent/Command-T'
+Bundle 'wincent/Command-T', {'dir': 'plugin-command-t'}
 "
 "}}}2
 
 "------ MiniBufferExplorer ----------------------------------------------- {{{2
 "
-Bundle 'fholgado/minibufexpl.vim'
+Bundle 'fholgado/minibufexpl.vim', {'dir': 'plugin-minibufexpl'}
 
 " Do not show cursorline and cursorcolumn in MiniBufExplorer window
 autocmd BufEnter -MiniBufExplorer- setlocal nocursorline
@@ -106,31 +106,31 @@ autocmd CursorHold -MiniBufExplorer- let g:quickfixsigns#marks#buffer = []
 
 "------ Repeat ----------------------------------------------------------- {{{2
 "
-Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-repeat', {'dir': 'plugin-repeat'}
 "
 "}}}2
 
 "------ Surround --------------------------------------------------------- {{{2
 "
-Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-surround', {'dir': 'plugin-surround'}
 "
 "}}}2
 
 "------ Peaksea Color Scheme --------------------------------------------- {{{2
 "
-Bundle 'peaksea'
+Bundle 'peaksea', {'dir': 'colors-peaksea'}
 "
 "}}}2
 
 "------ Solarized Color Scheme ------------------------------------------- {{{2
 "
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'altercation/vim-colors-solarized', {'dir': 'colors-solarized'}
 "
 "}}}2
 
 "------ Bufkill ---------------------------------------------------------- {{{2
 "
-Bundle 'bufkill.vim'
+Bundle 'bufkill.vim', {'dir': 'plugin-bufkill'}
 
 if exists('loaded_bufkill')
     nnoremap <Leader>jj :BB<CR>
@@ -141,19 +141,19 @@ endif
 
 "------ CheckSyntax ------------------------------------------------------ {{{2
 "
-Bundle 'tomtom/checksyntax_vim'
+Bundle 'tomtom/checksyntax_vim', {'dir': 'plugin-checksyntax'}
 "
 "}}}2
 
 "------ QuickFixSigns ---------------------------------------------------- {{{2
 "
-Bundle 'tomtom/quickfixsigns_vim'
+Bundle 'tomtom/quickfixsigns_vim', {'dir': 'plugin-quickfixsigns'}
 "
 "}}}2
 
 "------ PowerLine --- ---------------------------------------------------- {{{2
 "
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-powerline', {'dir': 'plugin-powerline'}
 
 if &t_Co >= 256 || has("gui_running")
     " In order to view fancy symbols for powerline, a patched font should
@@ -166,7 +166,7 @@ endif
 
 "------ Markdown Syntax -------------------------------------------------- {{{2
 "
-Bundle 'plasticboy/vim-markdown'
+Bundle 'plasticboy/vim-markdown', {'dir': 'syntax-markdown'}
 "
 "}}}1
 
