@@ -65,10 +65,6 @@ autocmd FileType nerdtree noremap <buffer> <Leader>hh     <nop>
 autocmd FileType nerdtree noremap <buffer> <Leader>ll     <nop>
 autocmd FileType nerdtree noremap <buffer> <Leader>jj     <nop>
 autocmd FileType nerdtree noremap <buffer> <Leader>kk     <nop>
-
-" Do not show quickfixsigns column in NERDTree window
-autocmd BufEnter NERD_tree_* let g:quickfixsigns#marks#buffer = []
-autocmd CursorHold NERD_tree_* let g:quickfixsigns#marks#buffer = []
 "
 "}}}2
 
@@ -97,10 +93,6 @@ autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>hh     <nop>
 autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>ll     <nop>
 autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>jj     <nop>
 autocmd BufEnter -MiniBufExplorer- noremap <buffer> <Leader>kk     <nop>
-
-" Do not show quickfixsigns column in MiniBufExplorer window
-autocmd BufEnter -MiniBufExplorer- let g:quickfixsigns#marks#buffer = []
-autocmd CursorHold -MiniBufExplorer- let g:quickfixsigns#marks#buffer = []
 "
 "}}}2
 
@@ -148,6 +140,10 @@ Bundle 'tomtom/checksyntax_vim', {'dir': 'plugin-checksyntax'}
 "------ QuickFixSigns ---------------------------------------------------- {{{2
 "
 Bundle 'tomtom/quickfixsigns_vim', {'dir': 'plugin-quickfixsigns'}
+
+" https://github.com/tomtom/quickfixsigns_vim/issues/23
+let g:quickfixsigns_blacklist_buffer=
+            \       '\(^__.*__$\)\|\(^NERD_tree_.*$\)\|\(^-MiniBufExplorer-$\)'
 "
 "}}}2
 
