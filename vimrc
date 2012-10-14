@@ -340,6 +340,13 @@ set wildignore+=*.o,*.a,*.mo,*.la,*.so,*.obj,*.pyc,*.class
 "
 "}}}1
 
+"====== Command Definition =============================================== {{{1
+"
+" Copy specific range to pasteboard, require gpaste
+command -range=% Copy :<line1>,<line2>w !tee | gpaste
+"
+"}}}1
+
 "====== Functionality Enhancement ======================================== {{{1
 "
 " Autoload files when changed on the disk
