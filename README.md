@@ -122,6 +122,13 @@ A wonderfull statusline plugin.
 
 Syntax highlighting for markdown light-weight markup language.
 
+### EasyMotion
+
+* [Github Repo](https://github.com/Lokaltog/vim-easymotion)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=3526)
+
+EasyMotion provides a much simpler way to use some motions in vim.
+
 Installation
 ------------
 

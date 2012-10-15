@@ -164,6 +164,12 @@ endif
 "
 Bundle 'plasticboy/vim-markdown', {'dir': 'syntax-markdown'}
 "
+"}}}2
+
+"------ EasyMotion ------------------------------------------------------- {{{2
+"
+Bundle 'Lokaltog/vim-easymotion', {'dir': 'plugin-easymotion'}
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
