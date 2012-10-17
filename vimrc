@@ -137,6 +137,8 @@ Bundle 'tomtom/checksyntax_vim', {'dir': 'plugin-checksyntax'}
 
 "------ QuickFixSigns ---------------------------------------------------- {{{2
 "
+" Optional dependency for balloon support in graphical version
+Bundle 'tomtom/tlib_vim', {'dir': 'plugin-tlib'}
 Bundle 'tomtom/quickfixsigns_vim', {'dir': 'plugin-quickfixsigns'}
 
 " https://github.com/tomtom/quickfixsigns_vim/issues/23
