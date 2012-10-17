@@ -4,6 +4,9 @@ set nocompatible
 " Redefine Leader key
 let mapleader=","
 
+" Redefine Local Leader key
+let maplocalleader=",,"
+
 "====== Plugin Settings ================================================== {{{1
 "
 " Required by Vundle
