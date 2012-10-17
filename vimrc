@@ -173,6 +173,8 @@ Bundle 'Lokaltog/vim-easymotion', {'dir': 'plugin-easymotion'}
 "------ Screen ----------------------------------------------------------- {{{2
 "
 Bundle 'ervandew/screen',         {'dir': 'plugin-screen'}
+
+let g:ScreenImpl = 'Tmux'
 "
 "}}}1
 
