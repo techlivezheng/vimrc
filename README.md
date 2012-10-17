@@ -129,6 +129,13 @@ Syntax highlighting for markdown light-weight markup language.
 
 EasyMotion provides a much simpler way to use some motions in vim.
 
+### Screen
+
+* [Github Repo](https://github.com/ervandew/screen)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=2711)
+
+Simulate a split shell, using gnu screen or tmux, that you can send commands to.
+
 Installation
 ------------
 

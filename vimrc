@@ -168,6 +168,12 @@ Bundle 'plasticboy/vim-markdown', {'dir': 'syntax-markdown'}
 "
 Bundle 'Lokaltog/vim-easymotion', {'dir': 'plugin-easymotion'}
 "
+"}}}2
+
+"------ Screen ----------------------------------------------------------- {{{2
+"
+Bundle 'ervandew/screen',         {'dir': 'plugin-screen'}
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
