@@ -1,6 +1,9 @@
 " Prevent VIM from being in VI compatible mode
 set nocompatible
 
+" Redefine Leader key
+let mapleader=","
+
 "====== Plugin Settings ================================================== {{{1
 "
 " Required by Vundle
