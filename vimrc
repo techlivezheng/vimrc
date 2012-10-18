@@ -18,6 +18,10 @@ set rtp+=~/.vim/bundle/vundle/
 " Initialize Vundle
 call vundle#rc()
 
+filetype plugin on          " Enable filetype based plugin
+filetype indent on          " Indent intelligently based on the
+                            "+ syntax rules for the filetype
+
 "------ Vundle ----------------------------------------------------------- {{{2
 "
 " Required by Vundle
@@ -313,10 +317,6 @@ set wildmenu                " List avaliable ex commands for completing
 set directory^=/tmp//       " Put all swap files together into /tmp directory
 set backspace=eol,start,indent
                             " Allow backspacing over everything in insert mode
-
-filetype plugin on          " Enable filetype based plugin
-filetype indent on          " Indent intelligently based on the
-                            "+ syntax rules for the filetype
 
 "------ Searching -------------------------------------------------------- {{{2
 "
