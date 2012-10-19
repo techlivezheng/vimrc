@@ -294,7 +294,8 @@ endif
 "
 "}}}2
 
-if g:colors_name == 'mustang' || g:colors_name == 'solarized'
+if exists('g:colors_name') &&
+    \ ( g:colors_name == 'mustang' || g:colors_name == 'solarized' )
     set colorcolumn=80
     set cursorline              "Highlight current line
     set cursorcolumn            "Highlight current column
