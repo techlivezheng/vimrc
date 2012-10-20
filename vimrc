@@ -300,7 +300,6 @@ if exists('g:colors_name') &&
     set cursorline              "Highlight current line
     set cursorcolumn            "Highlight current column
 endif
-highlight CursorLine term=bold cterm=bold
 
 " Unify colors of the info columns on the
 "+ left side of the window
