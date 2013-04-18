@@ -279,10 +279,10 @@ endif
 
 " Unify colors of the info columns on the
 "+ left side of the window
-highlight LineNr ctermbg=Black guibg=Black
-highlight FoldColumn ctermbg=Black guibg=Black
-highlight SignColumn ctermbg=Black guibg=Black
-highlight CursorLineNr ctermbg=Black guibg=Black
+highlight LineNr ctermbg=NONE guibg=NONE
+highlight FoldColumn ctermbg=NONE guibg=NONE
+highlight SignColumn ctermbg=NONE guibg=NONE
+highlight CursorLineNr ctermbg=NONE guibg=NONE
 "
 "}}}1
 
