@@ -389,6 +389,12 @@ nnoremap <C-l>      <C-w>l
 nnoremap <C-j>      <C-w>j
 nnoremap <C-k>      <C-w>k
 
+" Cursor movements in insert mode
+inoremap <C-h>      <left>
+inoremap <C-l>      <right>
+inoremap <C-j>      <down>
+inoremap <C-k>      <up>
+
 " Window operations
 nnoremap <Leader>wo <C-w>o
 nnoremap <Leader>ws <C-w>s
