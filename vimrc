@@ -473,8 +473,8 @@ nmap Q gqap
 "
 "}}}1
 
-if filereadable($HOME.'/.vimrc_local')
-    source $HOME/.vimrc_local
+if filereadable($HOME.'/.vimrc.local')
+    source $HOME/.vimrc.local
 endif
 
 " vim: foldenable foldcolumn=1 foldmethod=marker

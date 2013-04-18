@@ -144,7 +144,7 @@ please help yourself.
 
 Before proceeding the following commands, please be sure to backup your
 original vim configuration. The original `~/.vimrc` could be save as
-`~/.vimrc_local` which will be automatically loaded at the end of the
+`~/.vimrc.local` which will be automatically loaded at the end of the
 `~/.vimrc` file.
 
     git clone git@github.com:techlivezheng/vimrc.git ~/.vim
@@ -211,7 +211,7 @@ or
 
 If you are in a 256 color terminal and won't or can't get Solarized Color
 Palette set, then, Solarized could be configured to run in a 256 color
-compatiable mode by having following settings in `~/.vimrc_local`.
+compatiable mode by having following settings in `~/.vimrc.local`.
 
     let g:solarized_termcolors=256
     set background=dark
