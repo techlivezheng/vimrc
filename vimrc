@@ -331,7 +331,7 @@ command! -range=% Copy :<line1>,<line2>w !tee | gpaste
 "
 " Autoload files when changed on the disk
 set autoread
-autocmd BufEnter * checktime
+autocmd VimEnter,BufEnter,CursorHold * checktime
 autocmd FileChangedShell * echo "Warning: File changed on disk"
 "
 "}}}1
