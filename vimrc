@@ -5,7 +5,7 @@ set nocompatible
 let mapleader=","
 
 " Redefine Local Leader key
-let maplocalleader=",,"
+let maplocalleader='\'
 
 "====== Plugin Settings ================================================== {{{1
 "
