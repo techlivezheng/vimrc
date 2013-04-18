@@ -327,6 +327,12 @@ command! -range=% Copy :silent <line1>,<line2>w !tee | gpaste
 
 " View markdown files in its html form
 command! MarkdownView :silent %w !markdown | hxclean | elinks -eval 'bind "main" "q" = "really-quit"'
+
+" Open help in a new tab
+cnoreabbrev <expr> h getcmdtype() == ":" && getcmdline() == 'h' ? 'tab help' : 'h'
+
+" Open help in a vertical split window
+cnoreabbrev <expr> help getcmdtype() == ":" && getcmdline() == 'help' ? 'vertical topleft help' : 'help'
 "
 "}}}1
 
