@@ -55,9 +55,6 @@ Bundle 'techlivezheng/tagbar-phpctags', {'dir': 'plugin-tagbar-phpctags'}
 "
 Bundle 'scrooloose/nerdtree', {'dir': 'plugin-nerdtree'}
 
-let NERDTreeIgnore=['CVS']
-let NERDTreeChDirMode=2     " Setting root dir in NT also sets VIM's cd
-
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
 
 " Do not show cursorline and cursorcolumn in NERDTree window
