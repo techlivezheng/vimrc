@@ -274,6 +274,7 @@ highlight CursorLineNr ctermbg=NONE guibg=NONE
 "
 set hidden                  " Switch between unsaved buffers
 set wildmenu                " List avaliable ex commands for completing
+set wildmode=longest:full,full   " Complete till longest common string with wildmenu
 set directory^=/tmp//       " Put all swap files together into /tmp directory
 set backspace=eol,start,indent
                             " Allow backspacing over everything in insert mode
