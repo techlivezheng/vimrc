@@ -342,7 +342,7 @@ autocmd FileChangedShell * echo "Warning: File changed on disk"
 set pastetoggle=<F2>
 
 " Edit and reload .vimrc file
-nmap <silent> <Leader>ev :e $MYVIMRC<CR>
+nmap <silent> <Leader>ev :tabe $MYVIMRC<CR>
 nmap <silent> <Leader>es :so $MYVIMRC<CR>
 
 " Life saver
