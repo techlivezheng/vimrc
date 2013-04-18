@@ -257,10 +257,11 @@ endif
 " Better in diff mode, 256 colors.
 " Solarized:
 " http://ethanschoonover.com/solarized
-" A much more adaptable colorscheme, needs extra coinfigurations for
+" A much more adaptable color scheme, needs extra coinfigurations for
 " terminals.
+"
 " A X terminal emulator should use 'Solarized Palette' in order to get
-" solarized colorscheme working properly.
+" solarized color scheme working properly.
 "
 " Solarized color scheme could be configured by setting $SOLARIZED_PALETTE
 " environmental variable to 'dark' or 'light' accordingly.
