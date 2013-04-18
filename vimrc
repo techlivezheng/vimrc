@@ -211,7 +211,6 @@ set listchars=tab:▸-        " Change marks of the invisiable chars.
 set listchars+=eol:¬
 set listchars+=extends:>
 set listchars+=precedes:<
-set cpoptions+=$            " Show editing range for 'c' command
 set novisualbell            " Disable visual bell, it is annoying.
 set noerrorbells            " Don't beep on error
 
