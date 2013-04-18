@@ -323,7 +323,7 @@ set wildignore+=*.o,*.a,*.mo,*.la,*.so,*.obj,*.pyc,*.class
 "====== Command Definition =============================================== {{{1
 "
 " Copy specific range to pasteboard, require gpaste
-command! -range=% Copy :<line1>,<line2>w !tee | gpaste
+command! -range=% Copy :silent <line1>,<line2>w !tee | gpaste
 "
 "}}}1
 
