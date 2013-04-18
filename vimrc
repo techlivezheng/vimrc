@@ -324,6 +324,9 @@ set wildignore+=*.o,*.a,*.mo,*.la,*.so,*.obj,*.pyc,*.class
 "
 " Copy specific range to pasteboard, require gpaste
 command! -range=% Copy :silent <line1>,<line2>w !tee | gpaste
+
+" View markdown files in its html form
+command! MarkdownView :silent %w !markdown | hxclean | elinks -eval 'bind "main" "q" = "really-quit"'
 "
 "}}}1
 
