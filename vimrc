@@ -38,10 +38,6 @@ let g:tagbar_sort=0
 let g:tagbar_width=36
 
 noremap <silent> <Leader>y :TagbarToggle<CR>
-
-" Do not show cursorline and cursorcolumn in tagbar window
-autocmd FileType tagbar setlocal nocursorline
-autocmd FileType tagbar setlocal nocursorcolumn
 "
 "}}}2
 
@@ -56,10 +52,6 @@ Bundle 'techlivezheng/tagbar-phpctags', {'dir': 'plugin-tagbar-phpctags'}
 Bundle 'scrooloose/nerdtree', {'dir': 'plugin-nerdtree'}
 
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
-
-" Do not show cursorline and cursorcolumn in NERDTree window
-autocmd FileType nerdtree setlocal nocursorline
-autocmd FileType nerdtree setlocal nocursorcolumn
 "
 "}}}2
 
@@ -84,10 +76,6 @@ noremap <Leader>hh :MBEbp<CR>
 noremap <Leader>ll :MBEbn<CR>
 noremap <Leader>jj :MBEbb<CR>
 noremap <Leader>kk :MBEbf<CR>
-
-" Do not show cursorline and cursorcolumn in MiniBufExplorer window
-autocmd BufEnter -MiniBufExplorer- setlocal nocursorline
-autocmd BufEnter -MiniBufExplorer- setlocal nocursorcolumn
 "
 "}}}2
 
@@ -270,12 +258,8 @@ endif
 "
 "}}}2
 
-if exists('g:colors_name') &&
-    \ ( g:colors_name == 'mustang' || g:colors_name == 'solarized' )
-    set colorcolumn=80
-    set cursorline              "Highlight current line
-    set cursorcolumn            "Highlight current column
-endif
+set nocursorline            "Highlight current line
+set nocursorcolumn          "Highlight current column
 
 " Unify colors of the info columns on the
 "+ left side of the window
@@ -401,6 +385,9 @@ nnoremap <Leader>ws <C-w>s
 nnoremap <Leader>wq <C-w>c
 nnoremap <Leader>ww <C-w><C-w>
 nnoremap <Leader>wv <C-w>v<C-w>l
+
+map <Leader>sp :set cursorline<CR>:set cursorcolumn<CR>
+map <Leader>hp :set nocursorline<CR>:set nocursorcolumn<CR>
 
 " Arrow keys are evil
 map <up>    <nop>
