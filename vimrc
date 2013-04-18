@@ -368,6 +368,8 @@ nnoremap ; :
 "+ for wrapped lines
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 
 " Enable hlsearch
 nnoremap / :set hlsearch<CR> /
