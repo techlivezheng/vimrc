@@ -166,6 +166,17 @@ let g:ScreenImpl = 'Tmux'
 "
 Bundle 'benmills/vimux',          {'dir': 'plugin-vimux'}
 "
+"}}}2
+
+"------ NERDTree Tabs ---------------------------------------------------- {{{2
+"
+Bundle 'jistr/vim-nerdtree-tabs', {'dir': 'plugin-nerdtree-tabs'}
+let g:nerdtree_tabs_focus_on_files = 1
+let g:nerdtree_tabs_synchronize_view = 0
+let g:nerdtree_tabs_smart_startup_focus = 1
+let g:nerdtree_tabs_no_startup_for_diff = 1
+"let g:nerdtree_tabs_open_on_console_startup = 1
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
