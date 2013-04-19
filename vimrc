@@ -87,6 +87,11 @@ Bundle 'wincent/Command-T', {'dir': 'plugin-command-t'}
 "
 Bundle 'fholgado/minibufexpl.vim', {'dir': 'plugin-minibufexpl'}
 
+let g:miniBufExplAutoStart = 1
+let g:miniBufExplHideWhenDiff = 1
+let g:miniBufExplBuffersNeeded = 2
+let g:miniBufExplUseSingleClick = 1
+
 " Buffer movements
 noremap <Leader>hh :MBEbp<CR>
 noremap <Leader>ll :MBEbn<CR>
