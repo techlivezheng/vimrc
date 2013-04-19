@@ -160,6 +160,12 @@ Bundle 'ervandew/screen',         {'dir': 'plugin-screen'}
 
 let g:ScreenImpl = 'Tmux'
 "
+"}}}2
+
+"------ Vimux ------------------------------------------------------------ {{{2
+"
+Bundle 'benmills/vimux',          {'dir': 'plugin-vimux'}
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1

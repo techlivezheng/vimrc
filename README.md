@@ -136,6 +136,13 @@ EasyMotion provides a much simpler way to use some motions in vim.
 
 Simulate a split shell, using gnu screen or tmux, that you can send commands to.
 
+### Vimux
+
+* [Github Repo](https://github.com/benmills/vimux)
+* [Vim.org Script](http://www.vim.org/scripts/script.php?script_id=4011)
+
+Effortless vim and tmux interaction.
+
 Installation
 ------------
 
