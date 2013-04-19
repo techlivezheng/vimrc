@@ -234,6 +234,9 @@ set listchars+=extends:>
 set listchars+=precedes:<
 set novisualbell            " Disable visual bell, it is annoying.
 set noerrorbells            " Don't beep on error
+set nocursorline            " Don't highlight current line
+set nocursorcolumn          " Don't highlight current column
+
 
 "------ Terminals -------------------------------------------------------- {{{2
 "
@@ -314,9 +317,6 @@ else
 endif
 "
 "}}}2
-
-set nocursorline            "Highlight current line
-set nocursorcolumn          "Highlight current column
 
 " Unify colors of the info columns on the
 "+ left side of the window
