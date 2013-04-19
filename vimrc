@@ -192,6 +192,15 @@ Bundle 'Tab-Name', {'dir': 'plugin-tabname'}
 "https://github.com/tpope/vim-fugitive
 Bundle 'tpope/vim-fugitive', {'dir': 'plugin-fugitive'}
 "
+"}}}2
+
+"------ EasyTags --------------------------------------------------------- {{{2
+"
+"http://www.vim.org/scripts/script.php?script_id=3114
+"http://github.com/xolox/vim-easytags
+"Bundle 'xolox/vim-easytags', {'dir': 'plugin-easytags'}
+"let g:easytags_auto_highlight = 0
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
