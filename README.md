@@ -147,7 +147,7 @@ original vim configuration. The original `~/.vimrc` could be save as
 `~/.vimrc_local` which will be automatically loaded at the end of the
 `~/.vimrc` file.
 
-    git clone git@github.com:techlivezheng/Vim-IDE.git ~/.vim
+    git clone git@github.com:techlivezheng/vimrc.git ~/.vim
     ln -s .vim/vimrc .vimrc
 
 'Vundle' plugin should be installed manually first, then it will handle the
