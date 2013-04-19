@@ -201,6 +201,14 @@ Bundle 'tpope/vim-fugitive', {'dir': 'plugin-fugitive'}
 "Bundle 'xolox/vim-easytags', {'dir': 'plugin-easytags'}
 "let g:easytags_auto_highlight = 0
 "
+"}}}2
+
+"------ Indent Line ------------------------------------------------------ {{{2
+"
+"http://www.vim.org/scripts/script.php?script_id=2975
+"https://github.com/tpope/vim-fugitive
+Bundle 'Yggdroot/indentLine', {'dir': 'plugin-indentline'}
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
