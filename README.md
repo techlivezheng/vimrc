@@ -1,11 +1,11 @@
 Vim-IDE
 =======
 
-This is a cleaning up of my personal vim configuration, intend to provide
-a good start point for using vim as a major development tool with some IDE
-like features.
+This is a cleaning up of my personal vim configuration, aims to provide
+a good start point for using vim as a major development tool with some
+IDE-like features.
 
-This was inspired by the following projects where some tricks and settings
+It was inspired by the following projects where some tricks and settings
 came from.
 
 * [nvie's vimrc](https://github.com/nvie/vimrc)
@@ -16,8 +16,8 @@ came from.
 Plugins
 -------
 
-Plugins are managed and autoloaded by [Vundle][], and placed under
-`~/.vim/bundle` directory.
+Plugins are managed through [Vundle][] and placed under `~/.vim/bundle`
+directory.
 
 [Vundle]:http://www.vim.org/scripts/script.php?script_id=3458
 
@@ -146,38 +146,37 @@ Effortless vim and tmux interaction.
 Installation
 ------------
 
-The following instructions are only for \*nix platforms, as for the others,
+The following instructions are only for \*nix platforms. For other platform,
 please help yourself.
 
 Before proceeding the following commands, please be sure to backup your
 original vim configuration. The original `~/.vimrc` could be save as
-`~/.vimrc.local` which will be automatically loaded at the end of the
-`~/.vimrc` file.
+`~/.vimrc.local` which will be loaded at the end of the new `~/.vimrc` file.
 
     git clone git@github.com:techlivezheng/vimrc.git ~/.vim
     ln -s .vim/vimrc .vimrc
 
-'Vundle' plugin should be installed manually first, then it will handle the
-installation of the rest plugins.
+Vundle should be installed manually first.
 
     mkdir ~/.vim/bundle
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-For the rest plugins, either launch `vim` and run `:BundleInstall`, or execute
-the following command in cli.
+For the installation of the rest plugins, either launch `vim` and run
+`:BundleInstall`, or execute the following command in the terminal.
 
     vim +BundleInstall +qall
 
-The ruby extension for Command-T must be build first.
+Command-T needs to install a ruby extension.
 
     cd ~/.vim/bundle/command-t/ruby/command-t
     ruby extconf.rb
     make
 
-In order to get full experience of Vim Powerline plugin, a patched font should
+In order to get full experience of Powerline plugin, a patched font should
 be placed under ~/.fonts. See [fontpatcher][] page for a guide on how to patch
 a font, [Patched Fonts][] page provides a set of pre-patched fonts available
-for downloading, a pretty font has been shipped along with us in misc/ directory.
+for downloading, a pretty font has been included by default in `~/.vim/misc/`
+directory.
 
 [fontpatcher]: https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher
 [Patched Fonts]: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
@@ -187,47 +186,38 @@ for downloading, a pretty font has been shipped along with us in misc/ directory
 ColorScheme
 ===========
 
-The [Solarized][] colorscheme has been used as major colorscheme. By default,
-if vim was not started in a gui, the 8-color fallback mode which Solarized
-works well without extra attention will be used, but in order to get a full
-experience of the greate Solarized colorscheme, it is recommended to set a
-proper `$TERM` environmental variable as well as the needed 'Solarized Color
-Palette' with `$SOLARIZED_PALETTE` environmental variable accordingly if in a
-terminal emulator.
+[Solarized][] is a well designed sixteen color palette suitable for terminal
+use, that's the main reason why [vim-colors-solarized][] is my prefered color
+scheme. It is the default color scheme for GUI version. For terminal emulators,
+in order to get full experience of this great color scheme, a relevant color
+palette need to be configured, as well as a proper `$TERM` environmental
+variable. After that, by setting `$SOLARIZED_PALETTE` environmental variable to
+'dark' or 'light', vim will use relavant solarized color scheme accordlingly.
 
-We use a gnome-terminal as example.
+Let's take gnome-terminal as an example.
 
-First, use [gnome-terminal-colors-solarized][] to customize the terminal color
-palette for solarized colors. There are two color styles avaliable, dark and
-light, and set `$SOLARIZED_PALETTE` accordingly.
+First, set `$TERM` variable to 'xterm-16color', `export TERM=xterm-16color`
+('xterm-256color' is also good, `export TERM=xterm-256color`).
 
-    export SOLARIZED_PALETTE=dark
+Second, use [gnome-terminal-colors-solarized][] to configure solarized color
+palette for gnome terminal. There are two styles avaliable, dark and light.
 
-or
+At last, set `$SOLARIZED_PALETTE` environmental accordingly, `export
+SOLARIZED_PALETTE=dark` or `export SOLARIZED_PALETTE=light`.
 
-    export SOLARIZED_PALETTE=light
+For a terminal emulator that can't use solarized color palette but have
+256-colors support(`export TERM=xterm-256color`), the vim-colors-solarized
+could still be configured working in a compatible mode, all we need to do is
+just set `$SOLARIZED_COMPATIBLE` environmental variable
+(`export SOLARIZED_COMPATIBLE=TRUE`).
 
-Second, set a proper `$TERM` variable, both 'xterm-16color' and
-'xterm-256color' are good.
-
-    export TERM=xterm-16color
-
-or
-
-    export TERM=xterm-256color
-
-If you are in a 256 color terminal and won't or can't get Solarized Color
-Palette set, then, Solarized could be configured to run in a 256 color
-compatiable mode by having following settings in `~/.vimrc.local`.
-
-    let g:solarized_termcolors=256
-    set background=dark
-    colorscheme solarized
-
-Otherwise, without `$SOLARZIED_PALETTE` set in a 256 color terminal, a well
-designed 256 colorscheme 'mustang' will be used instead.
-
-For diff view, a better colorscheme 'peaksea' is beens used.
+As a fallback, solarized color scheme will still be used for un-configured
+8-colors or 16-colors terminal emulator in which it still looks good. Another
+color scheme [mustang][] will be used for 256-colors. and [peaksea][] for diff
+view.
 
 [Solarized]: http://ethanschoonover.com/solarized
+[vim-colors-solarized]: https://github.com/altercation/vim-colors-solarized
 [gnome-terminal-colors-solarized]: https://github.com/sigurdga/gnome-terminal-colors-solarized
+[mustang][]
+[peaksea][]
