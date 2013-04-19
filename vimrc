@@ -184,6 +184,14 @@ let g:nerdtree_tabs_no_startup_for_diff = 1
 "http://www.vim.org/scripts/script.php?script_id=1678
 Bundle 'Tab-Name', {'dir': 'plugin-tabname'}
 "
+"}}}2
+
+"------ Fugitive --------------------------------------------------------- {{{2
+"
+"http://www.vim.org/scripts/script.php?script_id=2975
+"https://github.com/tpope/vim-fugitive
+Bundle 'tpope/vim-fugitive', {'dir': 'plugin-fugitive'}
+"
 "}}}1
 
 "====== Common Settings ================================================== {{{1
