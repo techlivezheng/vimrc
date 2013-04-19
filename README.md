@@ -143,9 +143,9 @@ The following instructions are only for \*nix platforms, as for the others,
 please help yourself.
 
 Before proceeding the following commands, please be sure to backup your
-original vim configuration. The original ~/.vimrc could be save as
-~/.vimrc\_local which will be automatically loaded at the end of the
-.vimrc file.
+original vim configuration. The original `~/.vimrc` could be save as
+`~/.vimrc_local` which will be automatically loaded at the end of the
+`~/.vimrc` file.
 
     git clone git@github.com:techlivezheng/Vim-IDE.git ~/.vim
     ln -s .vim/vimrc .vimrc
