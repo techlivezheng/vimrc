@@ -30,6 +30,20 @@ Bundle 'gmarik/vundle', {'dir': 'vundle'}
 "
 "}}}2
 
+
+"------ PowerLine --- ---------------------------------------------------- {{{2
+"
+Bundle 'Lokaltog/vim-powerline', {'dir': 'plugin-powerline'}
+
+if &t_Co >= 256 || has("gui_running")
+    " In order to view fancy symbols for powerline, a patched font should
+    " be placed in ~/.fonts, misc/VeraMono-Powerline.ttf is a good choice.
+    " https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher
+    let g:Powerline_symbols = 'fancy'
+endif
+"
+"}}}2
+
 "------ Tagbar ----------------------------------------------------------- {{{2
 "
 Bundle 'majutsushi/tagbar', {'dir': 'plugin-tagbar'}
@@ -120,19 +134,6 @@ Bundle 'tomtom/quickfixsigns_vim', {'dir': 'plugin-quickfixsigns'}
 " https://github.com/tomtom/quickfixsigns_vim/issues/23
 let g:quickfixsigns_blacklist_buffer=
             \       '\(^__.*__$\)\|\(^NERD_tree_.*$\)\|\(^-MiniBufExplorer-$\)'
-"
-"}}}2
-
-"------ PowerLine --- ---------------------------------------------------- {{{2
-"
-Bundle 'Lokaltog/vim-powerline', {'dir': 'plugin-powerline'}
-
-if &t_Co >= 256 || has("gui_running")
-    " In order to view fancy symbols for powerline, a patched font should
-    " be placed in ~/.fonts, misc/VeraMono-Powerline.ttf is a good choice.
-    " https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher
-    let g:Powerline_symbols = 'fancy'
-endif
 "
 "}}}2
 
