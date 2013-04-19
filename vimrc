@@ -51,6 +51,8 @@ Bundle 'techlivezheng/tagbar-phpctags', {'dir': 'plugin-tagbar-phpctags'}
 "
 Bundle 'scrooloose/nerdtree', {'dir': 'plugin-nerdtree'}
 
+let NERDTreeHighlightCursorline=1
+
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
 "
 "}}}2
