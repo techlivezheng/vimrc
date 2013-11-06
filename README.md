@@ -172,6 +172,8 @@ Command-T needs to install a ruby extension.
     ruby extconf.rb
     make
 
+Also, remember to install ctags for tagbar.
+
 In order to get full experience of Powerline plugin, a patched font should
 be placed under ~/.fonts. See [fontpatcher][] page for a guide on how to patch
 a font, [Patched Fonts][] page provides a set of pre-patched fonts available

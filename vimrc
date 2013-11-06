@@ -7,6 +7,12 @@ let mapleader=","
 " Redefine Local Leader key
 let maplocalleader='\'
 
+" Put all swap files together into /tmp directory
+"silent !mkdir /tmp/vim-$(id -u) &>/dev/null
+"let &directory='/tmp/vim-'.str2nr(system('id -u')).'//,'.&directory
+
+"set dictionary+=~/.vim/misc/english.dict
+
 "====== Plugin Settings ================================================== {{{1
 "
 " Required by Vundle
@@ -18,6 +24,59 @@ set rtp+=~/.vim/bundle/vundle/
 " Initialize Vundle
 call vundle#rc()
 
+Bundle 'gmarik/vundle',                    {'dir': 'vundle'}
+
+Bundle 'tpope/vim-repeat',                 {'dir': 'plugin-repeat'}
+Bundle 'matchit.zip',                      {'dir': 'plugin-matchit'}
+Bundle 'tpope/vim-surround',               {'dir': 'plugin-surround'}
+Bundle 'Lokaltog/vim-powerline',           {'dir': 'plugin-powerline'}
+Bundle 'Townk/vim-autoclose',              {'dir': 'plugin-autoclose'}
+Bundle 'Lokaltog/vim-easymotion',          {'dir': 'plugin-easymotion'}
+Bundle 'majutsushi/tagbar',                {'dir': 'plugin-tagbar'}
+Bundle 'scrooloose/nerdtree',              {'dir': 'plugin-nerdtree'}
+Bundle 'jistr/vim-nerdtree-tabs',          {'dir': 'plugin-nerdtree-tabs'}
+Bundle 'fholgado/minibufexpl.vim',         {'dir': 'plugin-minibufexpl'}
+Bundle 'tomtom/tlib_vim',                  {'dir': 'plugin-tlib'}
+Bundle 'tomtom/checksyntax_vim',           {'dir': 'plugin-checksyntax'}
+Bundle 'ervandew/screen',                  {'dir': 'plugin-screen'}
+Bundle 'Tab-Name',                         {'dir': 'plugin-tabname'}
+Bundle 'Yggdroot/indentLine',              {'dir': 'plugin-indentline'}
+Bundle 'Shougo/neosnippet.vim',            {'dir': 'plugin-neosnippet'}
+Bundle 'Shougo/neocomplete.vim',           {'dir': 'plugin-neocomplete'}
+Bundle 'ZoomWin',                          {'dir': 'plugin-zoomwin'}
+
+"Git
+Bundle 'sjl/splice.vim',                   {'dir': 'plugin-splice'}
+Bundle 'mhinz/vim-signify',                {'dir': 'plugin-signify'}
+Bundle 'tpope/vim-fugitive',               {'dir': 'plugin-fugitive'}
+
+"HTML
+Bundle 'mattn/zencoding-vim',              {'dir': 'plugin-zencoding'}
+
+"PHP
+"Bundle 'phpfolding.vim',                   {'dir': 'plugin-phpfolding'}
+Bundle 'shawncplus/phpcomplete.vim',       {'dir': 'plugin-phpcomplete'}
+Bundle 'techlivezheng/tagbar-phpctags',    {'dir': 'plugin-tagbar-phpctags'}
+
+Bundle 'tkztmk/vim-vala',                  {'dir': 'filetype-vala'}
+Bundle 'plasticboy/vim-markdown',          {'dir': 'filetype-markdown'}
+
+"Colors
+Bundle 'peaksea',                          {'dir': 'colors-peaksea'}
+Bundle 'altercation/vim-colors-solarized', {'dir': 'colors-solarized'}
+
+"Bundle 'msanders/snipmate.vim',           {'dir': 'plugin-snipmate'}
+"Bundle 'wincent/Command-T',               {'dir': 'plugin-command-t'}
+" this create temporary dir in /tmp
+"Bundle 'tomtom/quickfixsigns_vim',        {'dir': 'plugin-quickfixsigns'}
+"Bundle 'benmills/vimux',                  {'dir': 'plugin-vimux'}
+"Bundle 'xolox/vim-easytags',              {'dir': 'plugin-easytags'}
+Bundle 'Shougo/vimproc',                  {'dir': 'plugin-vimproc'}
+"Bundle 'Shougo/neocomplcache',            {'dir': 'plugin-neocomplcache'}
+
+Bundle 'PotatoesMaster/i3-vim-syntax',    {'dir': 'filetype-i3'}
+autocmd BufEnter *i3/config setlocal filetype=i3
+
 filetype plugin on          " Enable filetype based plugin
 filetype indent on          " Indent intelligently based on the
                             "+ syntax rules for the filetype
@@ -26,14 +85,11 @@ filetype indent on          " Indent intelligently based on the
 "
 " Required by Vundle
 " Let Vundle manage itself
-Bundle 'gmarik/vundle', {'dir': 'vundle'}
 "
 "}}}2
 
-
 "------ PowerLine --- ---------------------------------------------------- {{{2
 "
-Bundle 'Lokaltog/vim-powerline', {'dir': 'plugin-powerline'}
 
 if &t_Co >= 256 || has("gui_running")
     " In order to view fancy symbols for powerline, a patched font should
@@ -46,95 +102,75 @@ endif
 
 "------ Tagbar ----------------------------------------------------------- {{{2
 "
-Bundle 'majutsushi/tagbar', {'dir': 'plugin-tagbar'}
 
 let g:tagbar_sort=0
 let g:tagbar_width=36
-
-noremap <silent> <Leader>y :TagbarToggle<CR>
 "
 "}}}2
 
 "------ Tagbar-PHPCtags -------------------------------------------------- {{{2
 "
-Bundle 'techlivezheng/tagbar-phpctags', {'dir': 'plugin-tagbar-phpctags'}
 "
 "}}}2
 
 "------ NERDTree --------------------------------------------------------- {{{2
 "
-Bundle 'scrooloose/nerdtree', {'dir': 'plugin-nerdtree'}
 
 let NERDTreeHighlightCursorline=1
-
-noremap <silent> <Leader>n :NERDTreeToggle<CR>
 "
 "}}}2
 
 "------ snipMate --------------------------------------------------------- {{{2
 "
-Bundle 'msanders/snipmate.vim', {'dir': 'plugin-snipmate'}
 "
 "}}}2
 
 "------ Command-T -------------------------------------------------------- {{{2
 "
-Bundle 'wincent/Command-T', {'dir': 'plugin-command-t'}
 "
 "}}}2
 
 "------ MiniBufferExplorer ----------------------------------------------- {{{2
 "
-Bundle 'fholgado/minibufexpl.vim', {'dir': 'plugin-minibufexpl'}
-
+set splitbelow
+let g:miniBufExplBRSplit = 0
+"let g:miniBufExplSortBy = "mru"
 let g:miniBufExplAutoStart = 1
+"let g:miniBufExplDebugLevel = 10
 let g:miniBufExplHideWhenDiff = 1
-let g:miniBufExplBuffersNeeded = 2
+let g:miniBufExplBuffersNeeded = 0
 let g:miniBufExplUseSingleClick = 1
-
-" Buffer movements
-noremap <Leader>hh :MBEbp<CR>
-noremap <Leader>ll :MBEbn<CR>
-noremap <Leader>jj :MBEbb<CR>
-noremap <Leader>kk :MBEbf<CR>
 "
 "}}}2
 
 "------ Repeat ----------------------------------------------------------- {{{2
 "
-Bundle 'tpope/vim-repeat', {'dir': 'plugin-repeat'}
 "
 "}}}2
 
 "------ Surround --------------------------------------------------------- {{{2
 "
-Bundle 'tpope/vim-surround', {'dir': 'plugin-surround'}
 "
 "}}}2
 
 "------ Peaksea Color Scheme --------------------------------------------- {{{2
 "
-Bundle 'peaksea', {'dir': 'colors-peaksea'}
 "
 "}}}2
 
 "------ Solarized Color Scheme ------------------------------------------- {{{2
 "
-Bundle 'altercation/vim-colors-solarized', {'dir': 'colors-solarized'}
 "
 "}}}2
 
 "------ CheckSyntax ------------------------------------------------------ {{{2
 "
-Bundle 'tomtom/checksyntax_vim', {'dir': 'plugin-checksyntax'}
 "
 "}}}2
 
 "------ QuickFixSigns ---------------------------------------------------- {{{2
 "
 " Optional dependency for balloon support in graphical version
-Bundle 'tomtom/tlib_vim', {'dir': 'plugin-tlib'}
-Bundle 'tomtom/quickfixsigns_vim', {'dir': 'plugin-quickfixsigns'}
 
 " https://github.com/tomtom/quickfixsigns_vim/issues/23
 let g:quickfixsigns_blacklist_buffer=
@@ -144,19 +180,16 @@ let g:quickfixsigns_blacklist_buffer=
 
 "------ Markdown Syntax -------------------------------------------------- {{{2
 "
-Bundle 'plasticboy/vim-markdown', {'dir': 'syntax-markdown'}
 "
 "}}}2
 
 "------ EasyMotion ------------------------------------------------------- {{{2
 "
-Bundle 'Lokaltog/vim-easymotion', {'dir': 'plugin-easymotion'}
 "
 "}}}2
 
 "------ Screen ----------------------------------------------------------- {{{2
 "
-Bundle 'ervandew/screen',         {'dir': 'plugin-screen'}
 
 let g:ScreenImpl = 'Tmux'
 "
@@ -164,25 +197,21 @@ let g:ScreenImpl = 'Tmux'
 
 "------ Vimux ------------------------------------------------------------ {{{2
 "
-Bundle 'benmills/vimux',          {'dir': 'plugin-vimux'}
 "
 "}}}2
 
-"------ NERDTree Tabs ---------------------------------------------------- {{{2
+"------ NERDTree Tabs ---------------------------------------------------- {{{3
 "
-Bundle 'jistr/vim-nerdtree-tabs', {'dir': 'plugin-nerdtree-tabs'}
 let g:nerdtree_tabs_focus_on_files = 1
 let g:nerdtree_tabs_synchronize_view = 0
 let g:nerdtree_tabs_smart_startup_focus = 1
 let g:nerdtree_tabs_no_startup_for_diff = 1
-"let g:nerdtree_tabs_open_on_console_startup = 1
 "
 "}}}2
 
 "------ Tab Name --------------------------------------------------------- {{{2
 "
 "http://www.vim.org/scripts/script.php?script_id=1678
-Bundle 'Tab-Name', {'dir': 'plugin-tabname'}
 "
 "}}}2
 
@@ -190,7 +219,6 @@ Bundle 'Tab-Name', {'dir': 'plugin-tabname'}
 "
 "http://www.vim.org/scripts/script.php?script_id=2975
 "https://github.com/tpope/vim-fugitive
-Bundle 'tpope/vim-fugitive', {'dir': 'plugin-fugitive'}
 "
 "}}}2
 
@@ -198,7 +226,6 @@ Bundle 'tpope/vim-fugitive', {'dir': 'plugin-fugitive'}
 "
 "http://www.vim.org/scripts/script.php?script_id=3114
 "http://github.com/xolox/vim-easytags
-"Bundle 'xolox/vim-easytags', {'dir': 'plugin-easytags'}
 "let g:easytags_auto_highlight = 0
 "
 "}}}2
@@ -207,7 +234,35 @@ Bundle 'tpope/vim-fugitive', {'dir': 'plugin-fugitive'}
 "
 "http://www.vim.org/scripts/script.php?script_id=2975
 "https://github.com/tpope/vim-fugitive
-Bundle 'Yggdroot/indentLine', {'dir': 'plugin-indentline'}
+
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+
+if !exists('g:neocomplete#sources#omni#input_patterns')
+    let g:neocomplete#sources#omni#input_patterns = {}
+endif
+let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_syntax_length = 3
+
+let g:neocomplete#sources#dictionary#dictionaries = {
+\    'default' : '',
+\    'text'     : $HOME.'/.vim/misc/english.dict',
+\ }
+
+let g:neosnippet#snippets_directory='~/.vim/bundle/plugin-snipmate/snippets'
+
+" <CR>: close popup and save indent.
+inoremap <expr> <CR> pumvisible() ? neocomplete#close_popup() : "\<CR>"
+
+" <TAB>: completion.
+"inoremap <expr><TAB> pumvisible() ? neocomplete#smart_close_popup() : "\<TAB>"
+
+" SuperTab like snippets behavior.
+inoremap <expr> <TAB> neosnippet#expandable_or_jumpable() ?  neosnippet#expand_or_jump_impl() : pumvisible() ? neocomplete#smart_close_popup() : "\<TAB>"
+
+let g:zoomwin_localoptlist   = ["ai","ar","bh","bin","bl","bomb","bt","cfu","ci","cin","cink","cino","cinw","cms","com","cpt","diff","efm","eol","ep","et","fenc","fex","ff","flp","fo","ft","gp","imi","ims","inde","inex","indk","inf","isk","key","kmp","lisp","mps","ml","ma","mod","nf","ofu","oft","pi","qe","ro","sw","sn","si","sts","spc","spf","spl","sua","swf","smc","syn","ts","tx","tw","udf","wm", "wfh", "wfw"]
 "
 "}}}1
 
@@ -301,10 +356,16 @@ if &t_Co >= 256 || has("gui_running")
     elseif has("gui_running")
         colorscheme solarized
     else
-        if exists("$SOLARIZED_PALETTE")
-            colorscheme solarized
-        elseif exists("$SOLARIZED_COMPATIBLE")
+        if exists("$SOLARIZED_COMPATIBLE")
+            if $SOLARIZED_PALETTE == 'light'
+                set background=light
+            endif
             let g:solarized_termcolors=256
+            colorscheme solarized
+        elseif exists("$SOLARIZED_PALETTE")
+            if $SOLARIZED_PALETTE == 'light'
+                set background=light
+            endif
             colorscheme solarized
         else
             colorscheme mustang
@@ -332,7 +393,6 @@ highlight CursorLineNr ctermbg=NONE guibg=NONE
 set hidden                  " Switch between unsaved buffers
 set wildmenu                " List avaliable ex commands for completing
 set wildmode=longest:full,full   " Complete till longest common string with wildmenu
-set directory^=/tmp//       " Put all swap files together into /tmp directory
 set backspace=eol,start,indent
                             " Allow backspacing over everything in insert mode
 
@@ -348,7 +408,7 @@ set nohlsearch              " Don't Highlight search results
 
 "------ Indentation ------------------------------------------------------ {{{2
 "
-set tabstop=4               " one tab = four spaces
+set tabstop=8               " one tab = eight spaces
 set smarttab                " Insert tabs on the start of a line
                             "+ according to shiftwidth
 set expandtab               " Use spaces instead of tabs
@@ -438,13 +498,30 @@ nnoremap <Leader>hl :nohlsearch<CR>
 nnoremap <C-h>      <C-w>h
 nnoremap <C-l>      <C-w>l
 nnoremap <C-j>      <C-w>j
-nnoremap <C-k>      <C-w>k
+"nnoremap <C-k>      <C-w>k
+
+"autocmd BufEnter * :SignifyToggle
 
 " Cursor movements in insert mode
-inoremap <C-h>      <left>
-inoremap <C-l>      <right>
-inoremap <C-j>      <down>
-inoremap <C-k>      <up>
+autocmd BufRead,BufEnter,BufNewFile * if exists("b:loaded_AutoClose") && b:loaded_AutoClose && !exists('b:called_insertmovement') | call <SID>InsertMovement() | endif
+
+func! s:expr_maparg(name,mode)
+  let mapdic = {}
+  let mapdic = maparg(a:name, a:mode, 0, 1)
+  let maprhs = maparg(a:name, a:mode)
+  if (l:mapdic['expr'] != 1)
+      let maprhs = "'".maprhs."'"
+  endif
+  return maprhs
+endfunc
+
+func! s:InsertMovement()
+    let b:called_insertmovement= 1
+    exec "inoremap <buffer> <silent> <expr> <C-h> ".s:expr_maparg('<left>', 'i')
+    exec "inoremap <buffer> <silent> <expr> <C-l> ".s:expr_maparg('<right>','i')
+    exec "inoremap <buffer> <silent> <expr> <C-j> ".s:expr_maparg('<down>', 'i')
+"    exec "inoremap <buffer> <silent> <expr> <C-k> ".s:expr_maparg('<up>',   'i')
+endfunc
 
 " Window operations
 nnoremap <Leader>wo <C-w>o
@@ -461,6 +538,16 @@ map <up>    <nop>
 map <down>  <nop>
 map <left>  <nop>
 map <right> <nop>
+
+noremap <silent> <Leader>y :TagbarToggle<CR>
+
+noremap <silent> <Leader>n :NERDTreeTabsToggle<CR>
+
+" Buffer movements
+noremap <Leader>hh :MBEbp<CR>
+noremap <Leader>ll :MBEbn<CR>
+noremap <Leader>jj :MBEbb<CR>
+noremap <Leader>kk :MBEbf<CR>
 
 " ,c = Copy
 map <Leader>c "+y
