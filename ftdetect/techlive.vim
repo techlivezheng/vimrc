@@ -1,4 +1,5 @@
 autocmd BufNewFile,BufRead PKGBUILD set filetype=sh
+autocmd BufNewFile,BufRead .bash_history set filetype=sh
 autocmd BufNewFile,BufRead /var/log/*.log,/var/log/*.log.*,/var/log/old/*.log.* set filetype=messages
 autocmd BufNewFile,BufRead /var/log/pacman.log set filetype=pacmanlog
 autocmd BufNewFile,BufRead /var/log/boot set filetype=bootlog

@@ -1,6 +1,8 @@
 " Prevent VIM from being in VI compatible mode
 set nocompatible
 
+set nomodeline
+
 " Redefine Leader key
 let mapleader=","
 
@@ -44,6 +46,7 @@ Bundle 'Yggdroot/indentLine',              {'dir': 'plugin-indentline'}
 Bundle 'Shougo/neosnippet.vim',            {'dir': 'plugin-neosnippet'}
 Bundle 'Shougo/neocomplete.vim',           {'dir': 'plugin-neocomplete'}
 Bundle 'ZoomWin',                          {'dir': 'plugin-zoomwin'}
+Bundle 'VimIM',                            {'dir': 'plugin-vimim'}
 
 "Git
 Bundle 'sjl/splice.vim',                   {'dir': 'plugin-splice'}
@@ -51,7 +54,7 @@ Bundle 'mhinz/vim-signify',                {'dir': 'plugin-signify'}
 Bundle 'tpope/vim-fugitive',               {'dir': 'plugin-fugitive'}
 
 "HTML
-Bundle 'mattn/zencoding-vim',              {'dir': 'plugin-zencoding'}
+"Bundle 'mattn/zencoding-vim',              {'dir': 'plugin-zencoding'}
 
 "PHP
 "Bundle 'phpfolding.vim',                   {'dir': 'plugin-phpfolding'}
@@ -75,6 +78,7 @@ Bundle 'Shougo/vimproc',                  {'dir': 'plugin-vimproc'}
 "Bundle 'Shougo/neocomplcache',            {'dir': 'plugin-neocomplcache'}
 
 Bundle 'PotatoesMaster/i3-vim-syntax',    {'dir': 'filetype-i3'}
+
 autocmd BufEnter *i3/config setlocal filetype=i3
 
 filetype plugin on          " Enable filetype based plugin
