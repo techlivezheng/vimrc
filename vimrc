@@ -29,55 +29,56 @@ call vundle#rc()
 Bundle 'gmarik/vundle',                    {'dir': 'vundle'}
 
 Bundle 'tpope/vim-repeat',                 {'dir': 'plugin-repeat'}
-Bundle 'matchit.zip',                      {'dir': 'plugin-matchit'}
 Bundle 'tpope/vim-surround',               {'dir': 'plugin-surround'}
-Bundle 'Lokaltog/vim-powerline',           {'dir': 'plugin-powerline'}
-Bundle 'Townk/vim-autoclose',              {'dir': 'plugin-autoclose'}
-Bundle 'Lokaltog/vim-easymotion',          {'dir': 'plugin-easymotion'}
-Bundle 'majutsushi/tagbar',                {'dir': 'plugin-tagbar'}
-Bundle 'scrooloose/nerdtree',              {'dir': 'plugin-nerdtree'}
-Bundle 'jistr/vim-nerdtree-tabs',          {'dir': 'plugin-nerdtree-tabs'}
-Bundle 'fholgado/minibufexpl.vim',         {'dir': 'plugin-minibufexpl'}
-Bundle 'tomtom/tlib_vim',                  {'dir': 'plugin-tlib'}
-Bundle 'tomtom/checksyntax_vim',           {'dir': 'plugin-checksyntax'}
-Bundle 'ervandew/screen',                  {'dir': 'plugin-screen'}
-Bundle 'Tab-Name',                         {'dir': 'plugin-tabname'}
-Bundle 'Yggdroot/indentLine',              {'dir': 'plugin-indentline'}
-Bundle 'Shougo/neosnippet.vim',            {'dir': 'plugin-neosnippet'}
-Bundle 'Shougo/neocomplete.vim',           {'dir': 'plugin-neocomplete'}
-Bundle 'ZoomWin',                          {'dir': 'plugin-zoomwin'}
-Bundle 'VimIM',                            {'dir': 'plugin-vimim'}
 
-"Git
-Bundle 'sjl/splice.vim',                   {'dir': 'plugin-splice'}
+"Bundle 'matchit.zip',                      {'dir': 'plugin-matchit'}
+"Bundle 'Lokaltog/vim-powerline',           {'dir': 'plugin-powerline'}
+"Bundle 'Townk/vim-autoclose',              {'dir': 'plugin-autoclose'}
+"Bundle 'Lokaltog/vim-easymotion',          {'dir': 'plugin-easymotion'}
+"Bundle 'majutsushi/tagbar',                {'dir': 'plugin-tagbar'}
+"Bundle 'scrooloose/nerdtree',              {'dir': 'plugin-nerdtree'}
+"Bundle 'jistr/vim-nerdtree-tabs',          {'dir': 'plugin-nerdtree-tabs'}
+"Bundle 'fholgado/minibufexpl.vim',         {'dir': 'plugin-minibufexpl'}
+"Bundle 'tomtom/tlib_vim',                  {'dir': 'plugin-tlib'}
+"Bundle 'tomtom/checksyntax_vim',           {'dir': 'plugin-checksyntax'}
+Bundle 'ervandew/screen',                  {'dir': 'plugin-screen'}
+"Bundle 'Tab-Name',                         {'dir': 'plugin-tabname'}
+"Bundle 'Yggdroot/indentLine',              {'dir': 'plugin-indentline'}
+"Bundle 'Shougo/neosnippet.vim',            {'dir': 'plugin-neosnippet'}
+"Bundle 'Shougo/neocomplete.vim',           {'dir': 'plugin-neocomplete'}
+"Bundle 'ZoomWin',                          {'dir': 'plugin-zoomwin'}
+""Bundle 'VimIM',                            {'dir': 'plugin-vimim'}
+"
+""Git
+""Bundle 'sjl/splice.vim',                   {'dir': 'plugin-splice'}
 Bundle 'mhinz/vim-signify',                {'dir': 'plugin-signify'}
 Bundle 'tpope/vim-fugitive',               {'dir': 'plugin-fugitive'}
-
-"HTML
-"Bundle 'mattn/zencoding-vim',              {'dir': 'plugin-zencoding'}
-
-"PHP
-"Bundle 'phpfolding.vim',                   {'dir': 'plugin-phpfolding'}
-Bundle 'shawncplus/phpcomplete.vim',       {'dir': 'plugin-phpcomplete'}
-Bundle 'techlivezheng/tagbar-phpctags',    {'dir': 'plugin-tagbar-phpctags'}
-
-Bundle 'tkztmk/vim-vala',                  {'dir': 'filetype-vala'}
-Bundle 'plasticboy/vim-markdown',          {'dir': 'filetype-markdown'}
-
-"Colors
+"
+""HTML
+""Bundle 'mattn/zencoding-vim',              {'dir': 'plugin-zencoding'}
+"
+""PHP
+""Bundle 'phpfolding.vim',                   {'dir': 'plugin-phpfolding'}
+"Bundle 'shawncplus/phpcomplete.vim',       {'dir': 'plugin-phpcomplete'}
+"Bundle 'techlivezheng/tagbar-phpctags',    {'dir': 'plugin-tagbar-phpctags'}
+"
+"Bundle 'tkztmk/vim-vala',                  {'dir': 'filetype-vala'}
+"Bundle 'plasticboy/vim-markdown',          {'dir': 'filetype-markdown'}
+"
+""Colors
 Bundle 'peaksea',                          {'dir': 'colors-peaksea'}
 Bundle 'altercation/vim-colors-solarized', {'dir': 'colors-solarized'}
-
-"Bundle 'msanders/snipmate.vim',           {'dir': 'plugin-snipmate'}
-"Bundle 'wincent/Command-T',               {'dir': 'plugin-command-t'}
-" this create temporary dir in /tmp
-"Bundle 'tomtom/quickfixsigns_vim',        {'dir': 'plugin-quickfixsigns'}
-"Bundle 'benmills/vimux',                  {'dir': 'plugin-vimux'}
-"Bundle 'xolox/vim-easytags',              {'dir': 'plugin-easytags'}
-Bundle 'Shougo/vimproc',                  {'dir': 'plugin-vimproc'}
-"Bundle 'Shougo/neocomplcache',            {'dir': 'plugin-neocomplcache'}
-
-Bundle 'PotatoesMaster/i3-vim-syntax',    {'dir': 'filetype-i3'}
+"
+""Bundle 'msanders/snipmate.vim',           {'dir': 'plugin-snipmate'}
+""Bundle 'wincent/Command-T',               {'dir': 'plugin-command-t'}
+"" this create temporary dir in /tmp
+""Bundle 'tomtom/quickfixsigns_vim',        {'dir': 'plugin-quickfixsigns'}
+""Bundle 'benmills/vimux',                  {'dir': 'plugin-vimux'}
+""Bundle 'xolox/vim-easytags',              {'dir': 'plugin-easytags'}
+"Bundle 'Shougo/vimproc',                  {'dir': 'plugin-vimproc'}
+""Bundle 'Shougo/neocomplcache',            {'dir': 'plugin-neocomplcache'}
+"
+"Bundle 'PotatoesMaster/i3-vim-syntax',    {'dir': 'filetype-i3'}
 
 autocmd BufEnter *i3/config setlocal filetype=i3
 
@@ -264,7 +265,7 @@ inoremap <expr> <CR> pumvisible() ? neocomplete#close_popup() : "\<CR>"
 "inoremap <expr><TAB> pumvisible() ? neocomplete#smart_close_popup() : "\<TAB>"
 
 " SuperTab like snippets behavior.
-inoremap <expr> <TAB> neosnippet#expandable_or_jumpable() ?  neosnippet#expand_or_jump_impl() : pumvisible() ? neocomplete#smart_close_popup() : "\<TAB>"
+"inoremap <expr> <TAB> neosnippet#expandable_or_jumpable() ?  neosnippet#expand_or_jump_impl() : pumvisible() ? neocomplete#smart_close_popup() : "\<TAB>"
 
 let g:zoomwin_localoptlist   = ["ai","ar","bh","bin","bl","bomb","bt","cfu","ci","cin","cink","cino","cinw","cms","com","cpt","diff","efm","eol","ep","et","fenc","fex","ff","flp","fo","ft","gp","imi","ims","inde","inex","indk","inf","isk","key","kmp","lisp","mps","ml","ma","mod","nf","ofu","oft","pi","qe","ro","sw","sn","si","sts","spc","spf","spl","sua","swf","smc","syn","ts","tx","tw","udf","wm", "wfh", "wfw"]
 "
