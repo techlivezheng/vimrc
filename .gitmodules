@@ -90,22 +90,22 @@
     url = git@github.com:techlivezheng/vim-plugin-fugitive.git
 [submodule "bundle/plugin-techlivezheng-minibufexpl"]
     path = bundle/plugin-techlivezheng-minibufexpl
-    url = git://github.com/fholgado/minibufexpl.vim.git
+    url = git://github.com/techlivezheng/vim-plugin-minibufexpl.git
 [submodule "bundle/plugin-techlivezheng-nerdtree"]
     path = bundle/plugin-techlivezheng-nerdtree
-    url = git://github.com/scrooloose/nerdtree.git
+    url = git://github.com/techlivezheng/vim-plugin-nerdtree.git
 [submodule "bundle/plugin-techlivezheng-nerdtree-tabs"]
     path = bundle/plugin-techlivezheng-nerdtree-tabs
     url = git@github.com:techlivezheng/vim-plugin-nerdtree-tabs.git
 [submodule "bundle/plugin-techlivezheng-powerline"]
     path = bundle/plugin-techlivezheng-powerline
-    url = git://github.com/Lokaltog/vim-powerline.git
+    url = git://github.com/techlivezheng/vim-plugin-powerline.git
 [submodule "bundle/plugin-techlivezheng-screen"]
     path = bundle/plugin-techlivezheng-screen
-    url = git://github.com/ervandew/screen.git
+    url = git://github.com/techlivezheng/vim-plugin-screen.git
 [submodule "bundle/plugin-techlivezheng-tagbar"]
     path = bundle/plugin-techlivezheng-tagbar
-    url = git://github.com/majutsushi/tagbar.git
+    url = git://github.com/techlivezheng/vim-plugin-tagbar.git
 [submodule "bundle/plugin-techlivezheng-tagbar-phpctags"]
     path = bundle/plugin-techlivezheng-tagbar-phpctags
     url = git://github.com/techlivezheng/tagbar-phpctags.git
