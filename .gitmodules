@@ -52,6 +52,9 @@
 [submodule "bundle/plugin-neosnippet"]
     path = bundle/plugin-neosnippet
     url = https://github.com/Shougo/neosnippet.vim.git
+[submodule "bundle/plugin-neosnippet-snippets"]
+    path = bundle/plugin-neosnippet-snippets
+    url = https://github.com/Shougo/neosnippet-snippets
 [submodule "bundle/plugin-phpcomplete"]
     path = bundle/plugin-phpcomplete
     url = https://github.com/shawncplus/phpcomplete.vim.git

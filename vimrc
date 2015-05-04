@@ -45,6 +45,7 @@ Bundle 'Tab-Name',                         {'dir': 'plugin-tabname'}
 Bundle 'Yggdroot/indentLine',              {'dir': 'plugin-indentline'}
 Bundle 'Shougo/neosnippet.vim',            {'dir': 'plugin-neosnippet'}
 Bundle 'Shougo/neocomplete.vim',           {'dir': 'plugin-neocomplete'}
+Bundle 'Shougo/neosnippet-snippets',       {'dir': 'plugin-neosnippet-snippets'}
 Bundle 'ZoomWin',                          {'dir': 'plugin-zoomwin'}
 "Bundle 'VimIM',                            {'dir': 'plugin-vimim'}
 
