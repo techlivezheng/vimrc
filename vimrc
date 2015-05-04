@@ -46,7 +46,7 @@ Bundle 'Yggdroot/indentLine',              {'dir': 'plugin-indentline'}
 Bundle 'Shougo/neosnippet.vim',            {'dir': 'plugin-neosnippet'}
 Bundle 'Shougo/neocomplete.vim',           {'dir': 'plugin-neocomplete'}
 Bundle 'ZoomWin',                          {'dir': 'plugin-zoomwin'}
-Bundle 'VimIM',                            {'dir': 'plugin-vimim'}
+"Bundle 'VimIM',                            {'dir': 'plugin-vimim'}
 
 "Git
 Bundle 'sjl/splice.vim',                   {'dir': 'plugin-splice'}
