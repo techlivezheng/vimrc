@@ -31,16 +31,16 @@ Bundle 'gmarik/vundle',                    {'dir': 'vundle'}
 Bundle 'tpope/vim-repeat',                 {'dir': 'plugin-repeat'}
 Bundle 'matchit.zip',                      {'dir': 'plugin-matchit'}
 Bundle 'tpope/vim-surround',               {'dir': 'plugin-surround'}
-Bundle 'Lokaltog/vim-powerline',           {'dir': 'plugin-powerline'}
+Bundle 'Lokaltog/vim-powerline',           {'dir': 'plugin-techlivezheng-powerline'}
 Bundle 'Townk/vim-autoclose',              {'dir': 'plugin-autoclose'}
 Bundle 'Lokaltog/vim-easymotion',          {'dir': 'plugin-easymotion'}
-Bundle 'majutsushi/tagbar',                {'dir': 'plugin-tagbar'}
-Bundle 'scrooloose/nerdtree',              {'dir': 'plugin-nerdtree'}
-Bundle 'jistr/vim-nerdtree-tabs',          {'dir': 'plugin-nerdtree-tabs'}
-Bundle 'fholgado/minibufexpl.vim',         {'dir': 'plugin-minibufexpl'}
+Bundle 'majutsushi/tagbar',                {'dir': 'plugin-techlivezheng-tagbar'}
+Bundle 'scrooloose/nerdtree',              {'dir': 'plugin-techlivezheng-nerdtree'}
+Bundle 'jistr/vim-nerdtree-tabs',          {'dir': 'plugin-techlivezheng-nerdtree-tabs'}
+Bundle 'fholgado/minibufexpl.vim',         {'dir': 'plugin-techlivezheng-minibufexpl'}
 Bundle 'tomtom/tlib_vim',                  {'dir': 'plugin-tlib'}
 Bundle 'tomtom/checksyntax_vim',           {'dir': 'plugin-checksyntax'}
-Bundle 'ervandew/screen',                  {'dir': 'plugin-screen'}
+Bundle 'ervandew/screen',                  {'dir': 'plugin-techlivezheng-screen'}
 Bundle 'Tab-Name',                         {'dir': 'plugin-tabname'}
 Bundle 'Yggdroot/indentLine',              {'dir': 'plugin-indentline'}
 Bundle 'Shougo/neosnippet.vim',            {'dir': 'plugin-neosnippet'}
@@ -51,7 +51,7 @@ Bundle 'ZoomWin',                          {'dir': 'plugin-zoomwin'}
 "Git
 Bundle 'sjl/splice.vim',                   {'dir': 'plugin-splice'}
 Bundle 'mhinz/vim-signify',                {'dir': 'plugin-signify'}
-Bundle 'tpope/vim-fugitive',               {'dir': 'plugin-fugitive'}
+Bundle 'tpope/vim-fugitive',               {'dir': 'plugin-techlivezheng-fugitive'}
 
 "HTML
 "Bundle 'mattn/zencoding-vim',              {'dir': 'plugin-zencoding'}
@@ -59,7 +59,7 @@ Bundle 'tpope/vim-fugitive',               {'dir': 'plugin-fugitive'}
 "PHP
 "Bundle 'phpfolding.vim',                   {'dir': 'plugin-phpfolding'}
 Bundle 'shawncplus/phpcomplete.vim',       {'dir': 'plugin-phpcomplete'}
-Bundle 'techlivezheng/tagbar-phpctags',    {'dir': 'plugin-tagbar-phpctags'}
+Bundle 'techlivezheng/tagbar-phpctags',    {'dir': 'plugin-techlivezheng-tagbar-phpctags'}
 
 Bundle 'tkztmk/vim-vala',                  {'dir': 'filetype-vala'}
 Bundle 'plasticboy/vim-markdown',          {'dir': 'filetype-markdown'}
