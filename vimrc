@@ -373,7 +373,7 @@ if &t_Co >= 256 || has("gui_running")
             endif
             colorscheme solarized
         else
-            colorscheme mustang
+            colorscheme peaksea
         endif
     endif
 elseif &t_Co >= 16
