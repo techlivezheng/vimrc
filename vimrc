@@ -446,7 +446,7 @@ set wildignore+=*.o,*.a,*.mo,*.la,*.so,*.obj,*.pyc,*.class
 "====== Command Definition =============================================== {{{1
 "
 " Copy specific range to pasteboard, require gpaste
-command! -range=% Copy :silent <line1>,<line2>w !tee | gpaste
+command! -range=% Copy :silent <line1>,<line2>w !tee | gpaste-client
 
 " View markdown files in its html form
 command! MarkdownView :silent %w !markdown | hxclean | elinks -eval 'bind "main" "q" = "really-quit"'
