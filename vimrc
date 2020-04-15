@@ -602,4 +602,12 @@ if filereadable($HOME.'/.vimrc.local')
     source $HOME/.vimrc.local
 endif
 
+au FileType sh let g:sh_fold_enabled=5
+
+au FileType sh let g:is_bash=1
+
+au FileType sh set foldmethod=syntax
+
+syntax enable
+
 " vim: foldenable foldcolumn=1 foldmethod=marker
