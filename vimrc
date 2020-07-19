@@ -608,6 +608,8 @@ au FileType sh let g:is_bash=1
 
 au FileType sh set foldmethod=syntax
 
+let g:vim_json_conceal=0
+
 syntax enable
 
 " vim: foldenable foldcolumn=1 foldmethod=marker
