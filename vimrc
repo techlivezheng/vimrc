@@ -64,6 +64,7 @@ Plugin 'techlivezheng/tagbar-phpctags',    {'name': 'plugin-techlivezheng-tagbar
 
 Plugin 'tkztmk/vim-vala',                  {'name': 'filetype-vala'}
 Plugin 'plasticboy/vim-markdown',          {'name': 'filetype-markdown'}
+Plugin 'pangloss/vim-javascript',          {'name': 'filetype-javascript'}
 
 "Colors
 Plugin 'peaksea',                          {'name': 'colors-peaksea'}
@@ -607,6 +608,8 @@ au FileType sh let g:sh_fold_enabled=5
 au FileType sh let g:is_bash=1
 
 au FileType sh set foldmethod=syntax
+
+au FileType javascript set foldmethod=syntax
 
 let g:vim_json_conceal=0
 
