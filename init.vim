@@ -1,0 +1,1 @@
+/home/weynhamz/.vimrc
