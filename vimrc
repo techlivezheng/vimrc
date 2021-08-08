@@ -613,6 +613,10 @@ au FileType javascript set foldmethod=syntax
 
 let g:vim_json_conceal=0
 
+autocmd Filetype json
+  \ let g:indentLine_setConceal = 0 |
+  \ let g:vim_json_syntax_conceal = 0
+
 syntax enable
 
 " vim: foldenable foldcolumn=1 foldmethod=marker
