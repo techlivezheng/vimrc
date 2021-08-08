@@ -28,6 +28,8 @@ call vundle#rc()
 
 Plugin 'gmarik/vundle',                    {'name': 'vundle'}
 
+Plugin 'nalaxon/ctrlp.vim',                {'name': 'plugin-ctrlp'}
+Plugin 'mileszs/ack.vim',                  {'name': 'plugin-ack'}
 Plugin 'tpope/vim-repeat',                 {'name': 'plugin-repeat'}
 Plugin 'matchit.zip',                      {'name': 'plugin-matchit'}
 Plugin 'tpope/vim-surround',               {'name': 'plugin-surround'}
