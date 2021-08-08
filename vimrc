@@ -24,7 +24,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 
 " Initialize Vundle
-call vundle#rc()
+call vundle#begin()
 
 Plugin 'gmarik/vundle',                    {'name': 'vundle'}
 
@@ -82,6 +82,8 @@ Plugin 'Shougo/vimproc',                  {'name': 'plugin-vimproc'}
 "Plugin 'Shougo/neocomplcache',            {'name': 'plugin-neocomplcache'}
 
 Plugin 'PotatoesMaster/i3-vim-syntax',    {'name': 'filetype-i3'}
+
+call vundle#end()
 
 autocmd BufEnter *i3/config setlocal filetype=i3
 
