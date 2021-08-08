@@ -26,59 +26,59 @@ set rtp+=~/.vim/bundle/vundle/
 " Initialize Vundle
 call vundle#rc()
 
-Bundle 'gmarik/vundle',                    {'dir': 'vundle'}
+Plugin 'gmarik/vundle',                    {'name': 'vundle'}
 
-Bundle 'tpope/vim-repeat',                 {'dir': 'plugin-repeat'}
-Bundle 'matchit.zip',                      {'dir': 'plugin-matchit'}
-Bundle 'tpope/vim-surround',               {'dir': 'plugin-surround'}
-Bundle 'Lokaltog/vim-powerline',           {'dir': 'plugin-techlivezheng-powerline'}
-Bundle 'Townk/vim-autoclose',              {'dir': 'plugin-autoclose'}
-Bundle 'Lokaltog/vim-easymotion',          {'dir': 'plugin-easymotion'}
-Bundle 'majutsushi/tagbar',                {'dir': 'plugin-techlivezheng-tagbar'}
-Bundle 'scrooloose/nerdtree',              {'dir': 'plugin-techlivezheng-nerdtree'}
-Bundle 'jistr/vim-nerdtree-tabs',          {'dir': 'plugin-techlivezheng-nerdtree-tabs'}
-Bundle 'fholgado/minibufexpl.vim',         {'dir': 'plugin-techlivezheng-minibufexpl'}
-Bundle 'tomtom/tlib_vim',                  {'dir': 'plugin-tlib'}
-Bundle 'tomtom/checksyntax_vim',           {'dir': 'plugin-checksyntax'}
-Bundle 'ervandew/screen',                  {'dir': 'plugin-techlivezheng-screen'}
-Bundle 'Tab-Name',                         {'dir': 'plugin-tabname'}
-Bundle 'Yggdroot/indentLine',              {'dir': 'plugin-indentline'}
-Bundle 'Shougo/neosnippet.vim',            {'dir': 'plugin-neosnippet'}
-Bundle 'Shougo/neocomplete.vim',           {'dir': 'plugin-neocomplete'}
-Bundle 'Shougo/neosnippet-snippets',       {'dir': 'plugin-neosnippet-snippets'}
-Bundle 'ZoomWin',                          {'dir': 'plugin-zoomwin'}
-"Bundle 'VimIM',                            {'dir': 'plugin-vimim'}
+Plugin 'tpope/vim-repeat',                 {'name': 'plugin-repeat'}
+Plugin 'matchit.zip',                      {'name': 'plugin-matchit'}
+Plugin 'tpope/vim-surround',               {'name': 'plugin-surround'}
+Plugin 'Lokaltog/vim-powerline',           {'name': 'plugin-techlivezheng-powerline'}
+Plugin 'Townk/vim-autoclose',              {'name': 'plugin-autoclose'}
+Plugin 'Lokaltog/vim-easymotion',          {'name': 'plugin-easymotion'}
+Plugin 'majutsushi/tagbar',                {'name': 'plugin-techlivezheng-tagbar'}
+Plugin 'scrooloose/nerdtree',              {'name': 'plugin-techlivezheng-nerdtree'}
+Plugin 'jistr/vim-nerdtree-tabs',          {'name': 'plugin-techlivezheng-nerdtree-tabs'}
+Plugin 'fholgado/minibufexpl.vim',         {'name': 'plugin-techlivezheng-minibufexpl'}
+Plugin 'tomtom/tlib_vim',                  {'name': 'plugin-tlib'}
+Plugin 'tomtom/checksyntax_vim',           {'name': 'plugin-checksyntax'}
+Plugin 'ervandew/screen',                  {'name': 'plugin-techlivezheng-screen'}
+Plugin 'Tab-Name',                         {'name': 'plugin-tabname'}
+Plugin 'Yggdroot/indentLine',              {'name': 'plugin-indentline'}
+Plugin 'Shougo/neosnippet.vim',            {'name': 'plugin-neosnippet'}
+Plugin 'Shougo/neocomplete.vim',           {'name': 'plugin-neocomplete'}
+Plugin 'Shougo/neosnippet-snippets',       {'name': 'plugin-neosnippet-snippets'}
+Plugin 'ZoomWin',                          {'name': 'plugin-zoomwin'}
+"Plugin 'VimIM',                            {'name': 'plugin-vimim'}
 
 "Git
-Bundle 'sjl/splice.vim',                   {'dir': 'plugin-splice'}
-Bundle 'mhinz/vim-signify',                {'dir': 'plugin-signify'}
-Bundle 'tpope/vim-fugitive',               {'dir': 'plugin-techlivezheng-fugitive'}
+Plugin 'sjl/splice.vim',                   {'name': 'plugin-splice'}
+Plugin 'mhinz/vim-signify',                {'name': 'plugin-signify'}
+Plugin 'tpope/vim-fugitive',               {'name': 'plugin-techlivezheng-fugitive'}
 
 "HTML
-"Bundle 'mattn/zencoding-vim',              {'dir': 'plugin-zencoding'}
+"Plugin 'mattn/zencoding-vim',              {'name': 'plugin-zencoding'}
 
 "PHP
-"Bundle 'phpfolding.vim',                   {'dir': 'plugin-phpfolding'}
-Bundle 'shawncplus/phpcomplete.vim',       {'dir': 'plugin-phpcomplete'}
-Bundle 'techlivezheng/tagbar-phpctags',    {'dir': 'plugin-techlivezheng-tagbar-phpctags'}
+"Plugin 'phpfolding.vim',                   {'name': 'plugin-phpfolding'}
+Plugin 'shawncplus/phpcomplete.vim',       {'name': 'plugin-phpcomplete'}
+Plugin 'techlivezheng/tagbar-phpctags',    {'name': 'plugin-techlivezheng-tagbar-phpctags'}
 
-Bundle 'tkztmk/vim-vala',                  {'dir': 'filetype-vala'}
-Bundle 'plasticboy/vim-markdown',          {'dir': 'filetype-markdown'}
+Plugin 'tkztmk/vim-vala',                  {'name': 'filetype-vala'}
+Plugin 'plasticboy/vim-markdown',          {'name': 'filetype-markdown'}
 
 "Colors
-Bundle 'peaksea',                          {'dir': 'colors-peaksea'}
-Bundle 'altercation/vim-colors-solarized', {'dir': 'colors-solarized'}
+Plugin 'peaksea',                          {'name': 'colors-peaksea'}
+Plugin 'altercation/vim-colors-solarized', {'name': 'colors-solarized'}
 
-"Bundle 'msanders/snipmate.vim',           {'dir': 'plugin-snipmate'}
-"Bundle 'wincent/Command-T',               {'dir': 'plugin-command-t'}
+"Plugin 'msanders/snipmate.vim',           {'name': 'plugin-snipmate'}
+"Plugin 'wincent/Command-T',               {'name': 'plugin-command-t'}
 " this create temporary dir in /tmp
-"Bundle 'tomtom/quickfixsigns_vim',        {'dir': 'plugin-quickfixsigns'}
-"Bundle 'benmills/vimux',                  {'dir': 'plugin-vimux'}
-"Bundle 'xolox/vim-easytags',              {'dir': 'plugin-easytags'}
-Bundle 'Shougo/vimproc',                  {'dir': 'plugin-vimproc'}
-"Bundle 'Shougo/neocomplcache',            {'dir': 'plugin-neocomplcache'}
+"Plugin 'tomtom/quickfixsigns_vim',        {'name': 'plugin-quickfixsigns'}
+"Plugin 'benmills/vimux',                  {'name': 'plugin-vimux'}
+"Plugin 'xolox/vim-easytags',              {'name': 'plugin-easytags'}
+Plugin 'Shougo/vimproc',                  {'name': 'plugin-vimproc'}
+"Plugin 'Shougo/neocomplcache',            {'name': 'plugin-neocomplcache'}
 
-Bundle 'PotatoesMaster/i3-vim-syntax',    {'dir': 'filetype-i3'}
+Plugin 'PotatoesMaster/i3-vim-syntax',    {'name': 'filetype-i3'}
 
 autocmd BufEnter *i3/config setlocal filetype=i3
 
