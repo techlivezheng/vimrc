@@ -82,6 +82,7 @@ Plugin 'Shougo/vimproc',                  {'name': 'plugin-vimproc'}
 "Plugin 'Shougo/neocomplcache',            {'name': 'plugin-neocomplcache'}
 
 Plugin 'PotatoesMaster/i3-vim-syntax',    {'name': 'filetype-i3'}
+Plugin 'vim-syntastic/syntastic',         {'name': 'plugin-syntastic'}
 
 call vundle#end()
 
@@ -620,6 +621,17 @@ let g:vim_json_conceal=0
 autocmd Filetype json
   \ let g:indentLine_setConceal = 0 |
   \ let g:vim_json_syntax_conceal = 0
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = 'npm run lint --'
 
 syntax enable
 
