@@ -13,6 +13,12 @@
 [submodule "bundle/filetype-vala"]
     path = bundle/filetype-vala
     url = git://github.com/tkztmk/vim-vala.git
+[submodule "bundle/filetype-javascript"]
+    path = bundle/filetype-javascript
+    url = git://github.com/pangloss/vim-javascript.git
+[submodule "bundle/plugin-ack"]
+    path = bundle/plugin-ack
+    url = git://github.com/mileszs/ack.vim.git
 [submodule "bundle/plugin-autoclose"]
     path = bundle/plugin-autoclose
     url = git://github.com/Townk/vim-autoclose.git
@@ -25,6 +31,9 @@
 [submodule "bundle/plugin-command-t"]
     path = bundle/plugin-command-t
     url = git://github.com/wincent/Command-T
+[submodule "bundle/plugin-ctrlp"]
+    path = bundle/plugin-ctrlp
+    url = git://github.com/nalaxon/ctrlp.vim.git
 [submodule "bundle/plugin-easymotion"]
     path = bundle/plugin-easymotion
     url = git://github.com/Lokaltog/vim-easymotion.git
