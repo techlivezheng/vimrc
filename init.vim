@@ -1,1 +1,1 @@
-/home/weynhamz/.vimrc
+vimrc
