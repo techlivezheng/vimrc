@@ -28,6 +28,12 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle',                    {'name': 'vundle'}
 
+Plugin 'google/vim-maktaba',              {'name': 'plugin-maktaba'}
+Plugin 'google/vim-coverage',              {'name': 'plugin-coverage'}
+Plugin 'google/vim-glaive',              {'name': 'plugin-glaive'}
+Plugin 'vim-vdebug/vdebug',              {'name': 'plugin-vdebug'}
+
+
 Plugin 'nalaxon/ctrlp.vim',                {'name': 'plugin-ctrlp'}
 Plugin 'mileszs/ack.vim',                  {'name': 'plugin-ack'}
 Plugin 'tpope/vim-repeat',                 {'name': 'plugin-repeat'}
@@ -45,8 +51,8 @@ Plugin 'tomtom/checksyntax_vim',           {'name': 'plugin-checksyntax'}
 Plugin 'ervandew/screen',                  {'name': 'plugin-techlivezheng-screen'}
 Plugin 'Tab-Name',                         {'name': 'plugin-tabname'}
 Plugin 'Yggdroot/indentLine',              {'name': 'plugin-indentline'}
-Plugin 'Shougo/neosnippet.vim',            {'name': 'plugin-neosnippet'}
-Plugin 'Shougo/neocomplete.vim',           {'name': 'plugin-neocomplete'}
+"Plugin 'Shougo/neosnippet.vim',            {'name': 'plugin-neosnippet'}
+"Plugin 'Shougo/neocomplete.vim',           {'name': 'plugin-neocomplete'}
 Plugin 'Shougo/neosnippet-snippets',       {'name': 'plugin-neosnippet-snippets'}
 Plugin 'ZoomWin',                          {'name': 'plugin-zoomwin'}
 "Plugin 'VimIM',                            {'name': 'plugin-vimim'}
@@ -86,6 +92,8 @@ Plugin 'vim-syntastic/syntastic',         {'name': 'plugin-syntastic'}
 
 call vundle#end()
 
+call glaive#Install()
+
 autocmd BufEnter *i3/config setlocal filetype=i3
 
 filetype plugin on          " Enable filetype based plugin
@@ -98,6 +106,11 @@ filetype indent on          " Indent intelligently based on the
 " Let Vundle manage itself
 "
 "}}}2
+"
+
+let g:vdebug_options = {}
+let g:vdebug_options["port"] = 9000
+
 
 "------ PowerLine --- ---------------------------------------------------- {{{2
 "
