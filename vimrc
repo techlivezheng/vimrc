@@ -333,6 +333,8 @@ if &term =~ "linux" " A linux console
 " is loading.
 elseif &term =~ "xterm-256color" " A X terminal emulator, 256 colors
     set t_Co=256
+elseif &term =~ "xterm-kitty" " A X terminal emulator, 256 colors
+    set t_Co=256
 elseif &term =~ "xterm-16color" " A X terminal emulator, 256 colors
     set t_Co=16
 elseif &term =~ "xterm" " A X terminal emulator
