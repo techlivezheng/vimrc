@@ -89,6 +89,7 @@ Plugin 'Shougo/vimproc',                  {'name': 'plugin-vimproc'}
 
 Plugin 'PotatoesMaster/i3-vim-syntax',    {'name': 'filetype-i3'}
 Plugin 'vim-syntastic/syntastic',         {'name': 'plugin-syntastic'}
+Plugin 'heavenshell/vim-jsdoc',           {'name': 'plugin-jsdoc'}
 
 call vundle#end()
 
