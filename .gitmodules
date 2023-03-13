@@ -28,6 +28,9 @@
 [submodule "bundle/plugin-checksyntax"]
     path = bundle/plugin-checksyntax
     url = git://github.com/tomtom/checksyntax_vim.git
+[submodule "bundle/plugin-coverage"]
+    path = bundle/plugin-coverage
+    url = https://github.com/google/vim-coverage.git
 [submodule "bundle/plugin-command-t"]
     path = bundle/plugin-command-t
     url = git://github.com/wincent/Command-T
@@ -139,3 +142,15 @@
 [submodule "bundle/vundle"]
     path = bundle/vundle
     url = git://github.com/techlivezheng/vim-plugin-vundle.git
+[submodule "bundle/plugin-glaive"]
+	path = bundle/plugin-glaive
+	url = https://github.com/google/vim-glaive.git
+[submodule "bundle/plugin-maktaba"]
+	path = bundle/plugin-maktaba
+	url = https://github.com/google/vim-maktaba.git
+[submodule "bundle/plugin-syntastic"]
+	path = bundle/plugin-syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "bundle/plugin-vdebug"]
+	path = bundle/plugin-vdebug
+	url = https://github.com/vim-vdebug/vdebug.git
