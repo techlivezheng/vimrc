@@ -438,7 +438,7 @@ set nohlsearch              " Don't Highlight search results
 set tabstop=8               " one tab = eight spaces
 set smarttab                " Insert tabs on the start of a line
                             "+ according to shiftwidth
-set expandtab               " Use spaces instead of tabs
+set noexpandtab             " Use spaces instead of tabs
 set autoindent              " Enable auto indenting
 set copyindent              " Copy the previous indentation on auto indenting
 set shiftwidth=4            " Indent to four spaces
