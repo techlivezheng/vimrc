@@ -1,147 +1,147 @@
 [submodule "bundle/colors-peaksea"]
     path = bundle/colors-peaksea
-    url = git://github.com/vim-scripts/peaksea.git
+    url = https://github.com/vim-scripts/peaksea.git
 [submodule "bundle/colors-solarized"]
     path = bundle/colors-solarized
-    url = git://github.com/altercation/vim-colors-solarized.git
+    url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/filetype-i3"]
     path = bundle/filetype-i3
-    url = git://github.com/PotatoesMaster/i3-vim-syntax.git
+    url = https://github.com/PotatoesMaster/i3-vim-syntax.git
 [submodule "bundle/filetype-markdown"]
     path = bundle/filetype-markdown
-    url = git://github.com/plasticboy/vim-markdown.git
+    url = https://github.com/plasticboy/vim-markdown.git
 [submodule "bundle/filetype-vala"]
     path = bundle/filetype-vala
-    url = git://github.com/tkztmk/vim-vala.git
+    url = https://github.com/tkztmk/vim-vala.git
 [submodule "bundle/filetype-javascript"]
     path = bundle/filetype-javascript
-    url = git://github.com/pangloss/vim-javascript.git
+    url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/plugin-ack"]
     path = bundle/plugin-ack
-    url = git://github.com/mileszs/ack.vim.git
+    url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/plugin-autoclose"]
     path = bundle/plugin-autoclose
-    url = git://github.com/Townk/vim-autoclose.git
+    url = https://github.com/Townk/vim-autoclose.git
 [submodule "bundle/plugin-bufkill"]
     path = bundle/plugin-bufkill
-    url = git://github.com/vim-scripts/bufkill.vim.git
+    url = https://github.com/vim-scripts/bufkill.vim.git
 [submodule "bundle/plugin-checksyntax"]
     path = bundle/plugin-checksyntax
-    url = git://github.com/tomtom/checksyntax_vim.git
+    url = https://github.com/tomtom/checksyntax_vim.git
 [submodule "bundle/plugin-coverage"]
     path = bundle/plugin-coverage
     url = https://github.com/google/vim-coverage.git
 [submodule "bundle/plugin-command-t"]
     path = bundle/plugin-command-t
-    url = git://github.com/wincent/Command-T
+    url = https://github.com/wincent/Command-T
 [submodule "bundle/plugin-ctrlp"]
     path = bundle/plugin-ctrlp
-    url = git://github.com/nalaxon/ctrlp.vim.git
+    url = https://github.com/nalaxon/ctrlp.vim.git
 [submodule "bundle/plugin-easymotion"]
     path = bundle/plugin-easymotion
-    url = git://github.com/Lokaltog/vim-easymotion.git
+    url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "bundle/plugin-easytags"]
     path = bundle/plugin-easytags
-    url = git://github.com/xolox/vim-easytags.git
+    url = https://github.com/xolox/vim-easytags.git
 [submodule "bundle/plugin-genutils"]
     path = bundle/plugin-genutils
-    url = git://github.com/vim-scripts/genutils.git
+    url = https://github.com/vim-scripts/genutils.git
 [submodule "bundle/plugin-indentline"]
     path = bundle/plugin-indentline
-    url = git://github.com/Yggdroot/indentLine.git
+    url = https://github.com/Yggdroot/indentLine.git
 [submodule "bundle/plugin-matchit"]
     path = bundle/plugin-matchit
-    url = git://github.com/vim-scripts/matchit.zip.git
+    url = https://github.com/vim-scripts/matchit.zip.git
 [submodule "bundle/plugin-multiselect"]
     path = bundle/plugin-multiselect
-    url = git://github.com/vim-scripts/multiselect.git
+    url = https://github.com/vim-scripts/multiselect.git
 [submodule "bundle/plugin-neocomplcache"]
     path = bundle/plugin-neocomplcache
-    url = git://github.com/Shougo/neocomplcache.git
+    url = https://github.com/Shougo/neocomplcache.git
 [submodule "bundle/plugin-neocomplete"]
     path = bundle/plugin-neocomplete
-    url = git://github.com/Shougo/neocomplete.vim.git
+    url = https://github.com/Shougo/neocomplete.vim.git
 [submodule "bundle/plugin-neosnippet"]
     path = bundle/plugin-neosnippet
-    url = git://github.com/Shougo/neosnippet.vim.git
+    url = https://github.com/Shougo/neosnippet.vim.git
 [submodule "bundle/plugin-neosnippet-snippets"]
     path = bundle/plugin-neosnippet-snippets
-    url = git://github.com/Shougo/neosnippet-snippets
+    url = https://github.com/Shougo/neosnippet-snippets
 [submodule "bundle/plugin-phpcomplete"]
     path = bundle/plugin-phpcomplete
-    url = git://github.com/shawncplus/phpcomplete.vim.git
+    url = https://github.com/shawncplus/phpcomplete.vim.git
 [submodule "bundle/plugin-phpfolding"]
     path = bundle/plugin-phpfolding
-    url = git://github.com/vim-scripts/phpfolding.vim.git
+    url = https://github.com/vim-scripts/phpfolding.vim.git
 [submodule "bundle/plugin-project"]
     path = bundle/plugin-project
-    url = git://github.com/amiorin/vim-project.git
+    url = https://github.com/amiorin/vim-project.git
 [submodule "bundle/plugin-quickfixsigns"]
     path = bundle/plugin-quickfixsigns
-    url = git://github.com/tomtom/quickfixsigns_vim.git
+    url = https://github.com/tomtom/quickfixsigns_vim.git
 [submodule "bundle/plugin-repeat"]
     path = bundle/plugin-repeat
-    url = git://github.com/tpope/vim-repeat.git
+    url = https://github.com/tpope/vim-repeat.git
 [submodule "bundle/plugin-signify"]
     path = bundle/plugin-signify
-    url = git://github.com/mhinz/vim-signify.git
+    url = https://github.com/mhinz/vim-signify.git
 [submodule "bundle/plugin-snipmate"]
     path = bundle/plugin-snipmate
-    url = git://github.com/msanders/snipmate.vim.git
+    url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/plugin-splice"]
     path = bundle/plugin-splice
-    url = git://github.com/sjl/splice.vim.git
+    url = https://github.com/sjl/splice.vim.git
 [submodule "bundle/plugin-surround"]
     path = bundle/plugin-surround
-    url = git://github.com/tpope/vim-surround
+    url = https://github.com/tpope/vim-surround
 [submodule "bundle/plugin-tabname"]
     path = bundle/plugin-tabname
-    url = git://github.com/vim-scripts/Tab-Name.git
+    url = https://github.com/vim-scripts/Tab-Name.git
 [submodule "bundle/plugin-techlivezheng-fugitive"]
     path = bundle/plugin-techlivezheng-fugitive
-    url = git://github.com/techlivezheng/vim-plugin-fugitive.git
+    url = https://github.com/techlivezheng/vim-plugin-fugitive.git
 [submodule "bundle/plugin-techlivezheng-minibufexpl"]
     path = bundle/plugin-techlivezheng-minibufexpl
-    url = git://github.com/techlivezheng/vim-plugin-minibufexpl.git
+    url = https://github.com/techlivezheng/vim-plugin-minibufexpl.git
 [submodule "bundle/plugin-techlivezheng-nerdtree"]
     path = bundle/plugin-techlivezheng-nerdtree
-    url = git://github.com/techlivezheng/vim-plugin-nerdtree.git
+    url = https://github.com/techlivezheng/vim-plugin-nerdtree.git
 [submodule "bundle/plugin-techlivezheng-nerdtree-tabs"]
     path = bundle/plugin-techlivezheng-nerdtree-tabs
-    url = git://github.com/techlivezheng/vim-plugin-nerdtree-tabs.git
+    url = https://github.com/techlivezheng/vim-plugin-nerdtree-tabs.git
 [submodule "bundle/plugin-techlivezheng-powerline"]
     path = bundle/plugin-techlivezheng-powerline
-    url = git://github.com/techlivezheng/vim-plugin-powerline.git
+    url = https://github.com/techlivezheng/vim-plugin-powerline.git
 [submodule "bundle/plugin-techlivezheng-screen"]
     path = bundle/plugin-techlivezheng-screen
-    url = git://github.com/techlivezheng/vim-plugin-screen.git
+    url = https://github.com/techlivezheng/vim-plugin-screen.git
 [submodule "bundle/plugin-techlivezheng-tagbar"]
     path = bundle/plugin-techlivezheng-tagbar
-    url = git://github.com/techlivezheng/vim-plugin-tagbar.git
+    url = https://github.com/techlivezheng/vim-plugin-tagbar.git
 [submodule "bundle/plugin-techlivezheng-tagbar-phpctags"]
     path = bundle/plugin-techlivezheng-tagbar-phpctags
-    url = git://github.com/techlivezheng/tagbar-phpctags.git
+    url = https://github.com/techlivezheng/tagbar-phpctags.git
 [submodule "bundle/plugin-tlib"]
     path = bundle/plugin-tlib
-    url = git://github.com/tomtom/tlib_vim.git
+    url = https://github.com/tomtom/tlib_vim.git
 [submodule "bundle/plugin-vimim"]
     path = bundle/plugin-vimim
-    url = git://github.com/vim-scripts/VimIM.git
+    url = https://github.com/vim-scripts/VimIM.git
 [submodule "bundle/plugin-vimproc"]
     path = bundle/plugin-vimproc
-    url = git://github.com/Shougo/vimproc.git
+    url = https://github.com/Shougo/vimproc.git
 [submodule "bundle/plugin-vimux"]
     path = bundle/plugin-vimux
-    url = git://github.com/benmills/vimux
+    url = https://github.com/benmills/vimux
 [submodule "bundle/plugin-zencoding"]
     path = bundle/plugin-zencoding
-    url = git://github.com/mattn/zencoding-vim.git
+    url = https://github.com/mattn/zencoding-vim.git
 [submodule "bundle/plugin-zoomwin"]
     path = bundle/plugin-zoomwin
-    url = git://github.com/vim-scripts/ZoomWin.git
+    url = https://github.com/vim-scripts/ZoomWin.git
 [submodule "bundle/vundle"]
     path = bundle/vundle
-    url = git://github.com/techlivezheng/vim-plugin-vundle.git
+    url = https://github.com/techlivezheng/vim-plugin-vundle.git
 [submodule "bundle/plugin-glaive"]
 	path = bundle/plugin-glaive
 	url = https://github.com/google/vim-glaive.git
